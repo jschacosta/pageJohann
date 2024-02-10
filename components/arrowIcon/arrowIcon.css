@@ -18,7 +18,12 @@
     position: fixed; /* Cambiado de absolute a fixed */
     z-index: 1000;
 }
-  
+
+.arrowDown, .arrowUp {
+    /* ...otros estilos... */
+    opacity: 0; /* Inicialmente oculto */
+    transition: opacity 0.3s ease; /* Transición suave de opacidad */
+  }
 .arrowUp:hover {
     transform: rotate(180deg) scale(1.4);
 }       

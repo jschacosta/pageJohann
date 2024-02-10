@@ -22,7 +22,7 @@ export const text = {
     frss: "Bonjour",
   },
   text3: {
-    en: `As a full-stack developer, I specialize in Vue.js and React for dynamic user interfaces, advanced JavaScript for robust server-side applications, and non-relational databases for efficient data management. I frequently use AWS tools to deploy and maintain applications, ensuring optimal performance in cloud environments.`,
+    en: `I'm a Chilean who speaks Spanish fluently, having lived in Berlin for over 6 months, where I honed my English skills through travel and immersion. Additionally, I'm proficient in Portuguese, having also spent extended periods of time in Portuguese-speaking regions.`,
     es: "Hola",
     fr: "Bonjour",
   },

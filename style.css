@@ -5,177 +5,237 @@
 @import url("./components/arrowIcon/arrowIcon.css");
 @import url("./components/navbar/navbar.css");
 
-
 /* GLOBAL */
 * {
   margin: 0; /* Restablece el margen de todos los elementos a 0 */
   padding: 0; /* Restablece el relleno de todos los elementos a 0 */
-  }
-  html {
-    scroll-behavior: smooth;
-    
-  }
-  body {
-    font-family: "Poppins", sans-serif;
-    margin: 0;
-    background: linear-gradient(-45deg, #1f242d, #333a49, #1f242d,#3e495b); 
-    background-size: 400% 400%;
-    width:100%;
-    height:100%;  
-    animation: animate 15s ease infinite;
-    overflow-x: hidden; /* Agregado para ocultar el desbordamiento horizontal */
-    box-sizing: border-box; /* Agregado para incluir padding y border en el ancho */
-  }
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: linear-gradient(-45deg, #1f242d, #333a49, #1f242d, #3e495b);
+  background-size: 800% 800%;
+  width: 100%;
+  height: 100vh; /* Cambiado de 100% a 100vh */
+  animation: animate 15s ease infinite;
+  overflow-x: hidden; /* Agregado para ocultar el desbordamiento horizontal */
+  box-sizing: border-box; /* Agregado para incluir padding y border en el ancho */
+}
 
-  @keyframes animate {
-    0% {
-      background-position: 0% 30%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 30%;
-    }
+@keyframes animate {
+  0% {
+    background-position: 0% 30%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 30%;
+  }
+}
 
-  .icon {
-    cursor: pointer;
-    height: 2rem;
-  }
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
 /* FIN GLOBAL */
 
-
-footer{
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-p.text-end{
-  color:white;
+p.text-end {
+  color: white;
   font-size: 18px;
   margin-top: 10px;
   margin-bottom: 30px;
-
 }
 
 /* FIN NAVBAR DESKTOP */
 
 /* CSS SECTION */
-section{
+section {
   margin-top: 10px;
-  }
-  section .animate{
-    transition: 1s;
-  }
+}
+section .animate {
+  transition: 1s;
+}
 
-  .sec-1 .animate{
-    transform:translateX(-100%)
-  }
-  .sec-1.show-animate .animate{
-    transform:translateX(0)
-  }
+.sec-2 .animate {
+  transform: translateX(-100%);
+}
+.sec-2.show-animate .animate {
+  transform: translateX(0);
+}
 
-  .sec-2 .animate{
-    transform:translateX(100%)
-  }
-  .sec-2.show-animate .animate{
-    transform:translateX(0)
-  }
-  .section-p{
-    display: flex;
-    justify-content: center;
-    color:white;
-    font-size: 18px;
-  }
-  .section-title{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    color:white;
-    font-size: 40px;
-    margin-top:-5px
-  }
+.sec-3 .animate {
+  transform: translateX(100%);
+}
+.sec-3.show-animate .animate {
+  transform: translateX(0);
+}
+.section-p {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+.section-title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+  margin-top: -5px;
+}
 
-
-
-
-  .titles{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 20vh;
+.titles {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 20vh;
 }
 /* FIN CSS SECTION */
 
-/* SECTION 1 */
-#about{
+#home {
   position: relative;
+}
+.components1 {
+  display: flex;
+  justify-content: center;
+  justify-items: center; /* Centra los elementos horizontalmente */
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  box-sizing: border-box;
+}
+.section__pic-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+.section__pic-main img {
+  height: 350px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+  border-radius: 100%; /* Añade bordes redondeados al contenedor */
+}
+
+.container {
+  display: flex; /* Convierte el contenedor en un contenedor flex */
+  text-align: center;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 40%;
+  transition: translate(-50%, -50%);
+}
+
+
+.text-1 {
+  color: white;
+  font-size: 40px;
+  /* font-weight: 300; */
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  position: relative;
+  animation: text 3s 1;
+}
+.text-2 {
+  font-size: 30px;
+  color: yellowgreen;
+  opacity: 0; /* Oculta el texto al inicio */
+  animation: text2 3s forwards; /* Agrega una animación para la opacidad y mantiene la animación original */
+}
+@keyframes text {
+  0% {
+    color: white;
+    margin-bottom: -40px;
   }
-  .components1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
+  30% {
+    letter-spacing: 10px;
+    margin-bottom: -40px;
   }
-  .carrousel-container {
-    overflow: hidden;
-    width: 300px;
-    margin: 0px 30px;
-    height: 300px;
-    border-radius: 20px;
+  85% {
+    letter-spacing: 5px;
+    margin-bottom: -40px;
   }
-  .cardsAbout{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    min-width: 300px; /* Ajusta este valor al ancho mínimo que prefieras */
+}
+@keyframes text2 {
+  0% {
+    opacity: 0; /* El texto está completamente transparente al inicio */
   }
-  .about-description{
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 10px auto; /* Centra el elemento horizontalmente */
-    padding: 10px;
-    width: 80%; /* Establece el ancho al 80% */
-    height: 30vh;
-    color:white;
+  85% {
+    opacity: 0; /* El texto está completamente transparente al inicio */
   }
-/* END SECTION 2  */
+  100% {
+    opacity: 1; /* El texto es completamente opaco al final de la animación */
+  }
+}
 
 /* SECTION 2 */
-#experience{
+#about {
   position: relative;
-  }
-  .components2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-    height: 80vh;
-  }
-  .cardsFlip {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    min-width: 300px; /* Ajusta este valor al ancho mínimo que prefieras */
-  }
+}
+.components2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+.carrousel-container {
+  overflow: hidden;
+  width: 300px;
+  margin: 0px 30px;
+  height: 300px;
+  border-radius: 20px;
+}
+.cardsAbout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px; /* Ajusta este valor al ancho mínimo que prefieras */
+}
+.about-description {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 10px auto; /* Centra el elemento horizontalmente */
+  padding: 10px;
+  width: 80%; /* Establece el ancho al 80% */
+  height: 30vh;
+  color: white;
+}
 /* END SECTION 2  */
 
-
-
-
- 
-  
-  
-  
- 
-
-
-
-
+/* SECTION 3 */
+#experience {
+  position: relative;
+}
+.components3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 80vh;
+}
+.cardsFlip {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px; /* Ajusta este valor al ancho mínimo que prefieras */
+}
+/* END SECTION 3  */

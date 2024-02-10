@@ -71,6 +71,8 @@ function setTexts() {
 
 function scrolling() {
   let sections = document.querySelectorAll("section");
+  let arrowUp = document.querySelector(".arrowUp");
+  let arrowDown = document.querySelector(".arrowDown");
   let offsetAdjustment = window.innerHeight * 0.2; // Ajusta este valor según sea necesario
   window.onscroll = () => {
     sections.forEach((sec) => {
@@ -79,11 +81,42 @@ function scrolling() {
       let height = sec.offsetHeight;
       if (top >= offset && top < offset + height) {
         sec.classList.add("show-animate");
+        if (sec.classList.contains("sec-1")) {
+          arrowUp.style.opacity = "0";
+          arrowDown.style.opacity = "0";
+        } else {
+          arrowUp.style.opacity = "1";
+          arrowDown.style.opacity = "1";
+        }
       } else {
         sec.classList.remove("show-animate");
       }
     });
   };
+}
+
+function keySpaceNavigation() {
+  let navbar = document.querySelector("#desktop-nav"); // Selecciona el navbar
+  let sections = document.querySelectorAll("section");
+  sections = Array.from(sections); // Convierte NodeList a Array
+  sections = sections.slice(1); // Elimina la primera sección
+  sections.unshift(navbar); // Agrega el navbar al principio de la lista de secciones
+  console.log(sections);
+
+  let currentSectionIndex = 0; // Contador para la sección actual
+
+  document.addEventListener("keydown", function (event) {
+    if (event.code == "Space") {
+      // Si se presiona la tecla espacio
+      event.preventDefault(); // Prevenir el comportamiento predeterminado de desplazamiento
+      currentSectionIndex++; // Incrementar el contador
+      if (currentSectionIndex >= sections.length) {
+        // Si hemos pasado la última sección
+        currentSectionIndex = 0; // Volver a la primera sección
+      }
+      sections[currentSectionIndex].scrollIntoView({ behavior: "smooth" }); // Desplazarse a la sección
+    }
+  });
 }
 
 function arrowsScroll() {
@@ -120,6 +153,7 @@ function initAll() {
   initSlides();
   setTexts();
   arrowsScroll();
+  keySpaceNavigation();
 }
 
 // Llama a la función init cuando el DOM esté completamente cargado

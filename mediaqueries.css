@@ -20,7 +20,7 @@
 }
 
 @media screen and (max-width: 750px) {
-    .components1 {
+    .components2 {
         flex-direction: column;
         margin-top: -10px;
     }
