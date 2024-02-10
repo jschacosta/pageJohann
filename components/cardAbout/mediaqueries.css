@@ -1,0 +1,29 @@
+
+
+@media screen and (min-width: 1500px) {
+    .cardAbout{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cardAbout{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .cardAbout{
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cardAbout{
+        width: 100px;
+        height: 100px;
+    }
+}

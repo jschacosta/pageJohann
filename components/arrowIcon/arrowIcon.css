@@ -1,26 +1,28 @@
 .arrowDown {
-    right: 5rem;
+    right: 1.5rem;
     height: 2.5rem;
-    bottom:10rem; 
+    bottom:3rem; 
     cursor: pointer;
     transition: transform 0.3s ease;
     position: fixed; /* Cambiado de absolute a fixed */
+    z-index: 1000;
 }
 
 .arrowUp {
     cursor: pointer;
-    right: 5rem;
+    right: 1.5rem;
     height: 2.5rem;
-    top:10rem; 
+    top:3rem; 
     transform: rotate(180deg);
     transition: transform 0.3s ease;
     position: fixed; /* Cambiado de absolute a fixed */
+    z-index: 1000;
 }
   
 .arrowUp:hover {
     transform: rotate(180deg) scale(1.4);
 }       
 
-/* .arrowDown:hover {
+.arrowDown:hover {
     transform: scale(1.4);
-} */
+}

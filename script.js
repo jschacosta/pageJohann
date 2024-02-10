@@ -90,11 +90,8 @@ function arrowsScroll() {
   // Obtén los iconos de flecha
   let arrowUp = document.querySelector(".arrowUp");
   let arrowDown = document.querySelector(".arrowDown");
-  console.log(arrowDown);
-
   // Agrega un controlador de eventos al icono de flecha hacia arriba
   arrowUp.addEventListener("click", () => {
-    console.log("click1");
     // Encuentra la sección actual
     let currentSection = document.querySelector(".show-animate");
     // Encuentra la sección anterior
@@ -107,7 +104,6 @@ function arrowsScroll() {
 
   // Agrega un controlador de eventos al icono de flecha hacia abajo
   arrowDown.addEventListener("click", () => {
-    console.log("click2");
     // Encuentra la sección actual
     let currentSection = document.querySelector(".show-animate");
     // Encuentra la sección siguiente

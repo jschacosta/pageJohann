@@ -1,0 +1,59 @@
+/* NAVBAR DESKTOP */
+#desktop-nav {
+    display: flex;
+    align-items: center;
+    /* margin: 0px; */
+    height: 5vh;
+    margin-top: 18px;
+    margin-left: 10px;
+    margin-right: 10px;
+    justify-content: space-around; 
+    /* background-color: #252526; */
+    color: white;
+    /* position: fixed; */
+    width: 100%;
+    z-index: 100;
+    flex-direction: row;
+    }
+  
+    nav .nav-title{
+      font-size: 24px;
+      width: 300px;
+    }
+    
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+        padding: 5px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0px 10px;
+        border: 1px solid transparent; /* Agrega un borde transparente */
+        box-sizing: border-box; /* Incluye el borde en el tamaño total del elemento */
+        transition: all 0.5s ease 0s;
+        padding: 10px;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+    }
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: white;
+      transition: width 0.3s ease-in-out;
+    }
+    
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+  
