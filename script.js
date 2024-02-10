@@ -131,7 +131,13 @@ function arrowsScroll() {
     let previousSection = currentSection.previousElementSibling;
     // Si hay una sección anterior, desplázate hasta ella
     if (previousSection) {
-      previousSection.scrollIntoView({ behavior: "smooth" });
+      console.log("previous", previousSection.id);
+      if (previousSection.id == "home") {
+        let navbar = document.querySelector("#desktop-nav");
+        navbar.scrollIntoView({ behavior: "smooth" });
+      } else {
+        previousSection.scrollIntoView({ behavior: "smooth" });
+      }
     }
   });
 

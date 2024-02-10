@@ -4,7 +4,7 @@
 @import url("./components/cardAbout/cardAbout.css");
 @import url("./components/arrowIcon/arrowIcon.css");
 @import url("./components/navbar/navbar.css");
-
+@import url("./components/btn/btn.css");  
 /* GLOBAL */
 * {
   margin: 0; /* Restablece el margen de todos los elementos a 0 */
@@ -147,7 +147,7 @@ section .animate {
   font-size: 40px;
   /* font-weight: 300; */
   letter-spacing: 2px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   position: relative;
   animation: text 3s 1;
 }
@@ -156,6 +156,21 @@ section .animate {
   color: yellowgreen;
   opacity: 0; /* Oculta el texto al inicio */
   animation: text2 3s forwards; /* Agrega una animación para la opacidad y mantiene la animación original */
+}
+.iconZoom {
+  cursor: pointer;
+  height: 2rem;
+  margin:0px 10px;
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Añadida transición para transform */
+}
+
+.iconZoom:hover {
+  transform: scale(1.4);
+}
+
+.btn-container{
+  margin-top: 20px;
+  margin-bottom:20px
 }
 @keyframes text {
   0% {
