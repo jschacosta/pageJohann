@@ -24,6 +24,21 @@
 @media screen and (max-width: 600px) {
     .cardAbout{
         width: 100px;
-        height: 100px;
+        height: 140px;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 2px;
+    }
+    .card-title{
+        color:white;
+        text-align: center;
+        font-size: 14px;
+        margin-bottom: 5px;
+      }
+      .card-subtitle{
+        text-align: center;
+        color:white;
+        font-size: 10px;
     }
 }

@@ -55,6 +55,52 @@
         <div class="container">
           <span class="text-1">Johann Schwarze</span>
           <span class="text-2">Full Stack Developer</span>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/resume-example.pdf')"
+            >
+              Download CV
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedinIcon3.png"
+              alt="My LinkedIn profile"
+              style="margin-top: -3px"
+              class="icon iconZoom"
+              target="_blank"
+              onclick="window.open('https://github.com/jschacosta', '_blank')"
+            />
+            <img
+              src="./assets/githubWhite.png"
+              alt="My Github profile"
+              class="icon iconZoom"
+              onclick="window.open('https://github.com/jschacosta', '_blank')"
+            />
+          </div>
+          <div class="column">
+            <img
+              src="./assets/arrowDown.png"
+              alt="Arrow icon"
+              class="icon iconZoom"
+              style="margin-top: 10px"
+              onclick="location.href='./#about'"
+            />
+            <img
+              src="./assets/arrowDown.png"
+              alt="Arrow icon"
+              class="icon iconZoom arrow3"
+              style="margin-top: -15px; transform: scale(1.1)"
+              onclick="location.href='./#about'"
+            />
+          </div>
         </div>
       </div>
     </section>
@@ -71,28 +117,31 @@
               alt="aboutPicture"
               class="slide"
             />
-            <!-- <img
-              src="./assets/FotoJohann2.png"
-              alt="aboutPicture"
-              class="slide"
-            /> -->
             <img src="./assets/pc.png" alt="aboutPicture" class="slide" />
             <!-- Agrega más imágenes aquí -->
           </div>
         </div>
         <div class="cardsAbout">
           <div class="cardAbout" id="card1">
-            <img src="./assets/experience2.png" alt="cardIcon" class="icon" />
+            <img
+              src="./assets/experience2.png"
+              alt="cardIcon"
+              class="iconAbout"
+            />
             <p class="card-title">Experience</p>
             <p class="card-subtitle">3+ years <br />Full Stack Development</p>
           </div>
           <div class="cardAbout" id="card2">
-            <img src="./assets/studies.png" alt="cardIcon" class="icon" />
+            <img src="./assets/studies.png" alt="cardIcon" class="iconAbout" />
             <p class="card-title">Education</p>
             <p class="card-subtitle">B.Sc. in Civil Mechanical Engineering</p>
           </div>
           <div class="cardAbout" id="card3">
-            <img src="./assets/studies.png" alt="cardIcon" class="icon" />
+            <img
+              src="./assets/dialogicon.png"
+              alt="cardIcon"
+              class="iconAbout"
+            />
             <p class="card-title">Languages</p>
             <p class="card-subtitle">Spanish (Native), English, Portugues</p>
           </div>

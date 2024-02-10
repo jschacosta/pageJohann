@@ -122,13 +122,13 @@ section .animate {
   width: 30%;
 }
 .section__pic-main img {
-  height: 350px;
+  height: auto; /* Cambiado de 350px a auto */
   width: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
-  border-radius: 100%; /* Añade bordes redondeados al contenedor */
+  border-radius: 50%; /* Añade bordes redondeados al contenedor */
 }
 
 .container {
@@ -146,7 +146,7 @@ section .animate {
   color: white;
   font-size: 40px;
   /* font-weight: 300; */
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   margin-bottom: 20px;
   position: relative;
   animation: text 3s 1;
@@ -163,7 +163,7 @@ section .animate {
     margin-bottom: -40px;
   }
   30% {
-    letter-spacing: 10px;
+    letter-spacing:10px;
     margin-bottom: -40px;
   }
   85% {
@@ -186,6 +186,10 @@ section .animate {
 /* SECTION 2 */
 #about {
   position: relative;
+}
+.iconAbout {
+  cursor: pointer;
+  height: 2rem;
 }
 .components2 {
   display: flex;
