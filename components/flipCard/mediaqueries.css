@@ -1,0 +1,26 @@
+@media screen and (min-width: 1500px) {
+    .flipCard{
+        height: 600px;
+        width: 600px;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .flipCard{
+        height: 400px;
+        width: 400px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .flipCard{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .flipCard{
+        height: 250px;
+        width: 250px;
+        margin: 10px 0px;
+    }
+}

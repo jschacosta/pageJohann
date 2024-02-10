@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("./components/flipCard/flipCard.css");
+@import url("./components/arrowIcon/arrowIcon.css");
+@import url("./components/carrousel/carrousel.css");
+@import url("./components/cardAbout/cardAbout.css");
+
+
+/* GLOBAL */
+* {
+  margin: 0; /* Restablece el margen de todos los elementos a 0 */
+  padding: 0; /* Restablece el relleno de todos los elementos a 0 */
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background: linear-gradient(-45deg, #1f242d, #333a49, #1f242d,#3e495b); 
+    background-size: 400% 400%;
+    width:100%;
+    height:100%;  
+    animation: animate 30s ease infinite;
+    
+  }
+
+  @keyframes animate {
+    0% {
+      background-position: 0% 30%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 30%;
+    }
+  }
+
+  .icon {
+    cursor: pointer;
+    height: 2rem;
+  }
+/* FIN GLOBAL */
+
+
+/* NAVBAR DESKTOP */
+#desktop-nav {
+  display: flex;
+  align-items: center;
+  padding: 0 0;
+  /* margin: 0px; */
+  height: 5vh;
+  justify-content: space-between; 
+  /* background-color: #252526; */
+  color: white;
+  /* position: fixed; */
+  width: 100%;
+  z-index: 100;
+  flex-direction: row;
+  }
+  nav ul{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      width: 50%;
+      list-style: none;
+  }
+  nav ul li a{
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0px 20px;
+
+      transition: all 0.3s ease 0s;
+  }
+/* FIN NAVBAR DESKTOP */
+
+/* CSS SECTION */
+section{
+  margin-top: 10px;
+  }
+  section .animate{
+    transition: 1s;
+  }
+
+  .sec-1 .animate{
+    transform:translateX(-100%)
+  }
+  .sec-1.show-animate .animate{
+    transform:translateX(0)
+  }
+
+  .sec-2 .animate{
+    transform:translateX(100%)
+  }
+  .sec-2.show-animate .animate{
+    transform:translateX(0)
+  }
+  .section-p{
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 18px;
+  }
+  .section-title{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    color:white;
+    font-size: 40px;
+    margin-top:-5px
+  }
+
+
+
+
+  .titles{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 20vh;
+}
+/* FIN CSS SECTION */
+
+/* SECTION 1 */
+#about{
+  position: relative;
+  }
+  .components1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  .carrousel-container {
+    overflow: hidden;
+    width: 300px;
+    margin: 0px 30px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  .cardsAbout{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px; /* Ajusta este valor al ancho mínimo que prefieras */
+  }
+  .about-description{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px auto; /* Centra el elemento horizontalmente */
+    padding: 10px;
+    width: 80%; /* Establece el ancho al 80% */
+    height: 30vh;
+    color:white;
+  }
+/* END SECTION 2  */
+
+/* SECTION 2 */
+#experience{
+  position: relative;
+  }
+  .components2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    height: 80vh;
+  }
+  .cardsFlip {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px; /* Ajusta este valor al ancho mínimo que prefieras */
+  }
+/* END SECTION 2  */
+
+
+
+
+ 
+  
+  
+  
+ 
+
+
+
+

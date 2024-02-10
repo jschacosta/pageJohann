@@ -1,0 +1,21 @@
+
+
+@media screen and (min-width: 1500px) {
+
+    .carrousel{
+        width: 470px;
+        height: 470px;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) {
+   
+}
+
+
+
+@media screen and (max-width: 600px) {
+    
+}

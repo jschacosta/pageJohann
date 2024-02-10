@@ -1,0 +1,33 @@
+.cardAbout {
+    box-sizing: border-box; /* Añade esta línea */
+    display: flex;
+    transition: transform 0.3s ease-in-out, border 0.3s ease-in-out;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    padding: 5px;
+    border: rgb(53, 53, 53) 0.15rem solid;
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .cardAbout:hover {
+    transform: scale(1.1);
+    border-width: 0.1rem ;
+    border-color: white;
+  }
+
+  .card-title{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+  }
+  .card-subtitle{
+    text-align: center;
+    color:white;
+    font-size: 14px;
+}
+
+

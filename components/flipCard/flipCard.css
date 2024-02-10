@@ -1,0 +1,34 @@
+.flipCard{
+    height: 450px;
+    width: 450px;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+    margin: 0px 40px;
+    border: white 0.15rem solid;
+    
+    border-radius: 2rem;
+
+}
+
+.flipCard:hover{
+cursor: pointer;
+transform: rotateY(180deg);
+border: white 0.15rem solid;
+}
+
+.front,.back{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 2rem;
+    backface-visibility: hidden;
+}
+
+.front{
+    /* background-color: tomato; */
+}
+
+.back{
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,46 @@
+
+@import url("./components/flipCard/mediaqueries.css");
+@import url("./components/carrousel/mediaqueries.css");
+
+@media screen and (min-width: 1500px) {
+    .cardAbout{
+        width: 250px;
+        height: 250px;
+    }
+    .section-p{
+        font-size:20px
+    }
+    .section-title{
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cardAbout{
+        width: 100px;
+        height: 100px;
+    }
+  
+    .section-p{
+        font-size:20px
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .components1 {
+        flex-direction: column;
+        margin-top: -50px;
+    }
+    .carrousel-container{
+        width: 200px;
+        height: 200px;
+    }
+    .cardAbout{
+        width: 80px;
+        height: 80px;
+    }
+    .cardsFlip{
+        display: flex;
+    flex-direction: column;
+    }   
+}
