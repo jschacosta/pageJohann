@@ -73,10 +73,10 @@ function scrolling() {
   let sections = document.querySelectorAll("section");
   let arrowUp = document.querySelector(".arrowUp");
   let arrowDown = document.querySelector(".arrowDown");
-  let offsetAdjustment = window.innerHeight * 0.2; // Ajusta este valor según sea necesario
+  let offsetAdjustment = document.documentElement.clientHeight * 0.2; // Ajusta este valor según sea necesario
   window.onscroll = () => {
     sections.forEach((sec) => {
-      let top = window.scrollY;
+      let top = document.documentElement.scrollTop;
       let offset = sec.offsetTop - offsetAdjustment;
       let height = sec.offsetHeight;
       if (top >= offset && top < offset + height) {

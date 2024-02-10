@@ -45,6 +45,10 @@
         width: 200px;
         height: 200px;
     }
+    .sec-2 .animate, .sec-3 .animate {
+      transition: none;
+      transform: none;
+    }
 
 .text-1 {
     font-size: 25px;
