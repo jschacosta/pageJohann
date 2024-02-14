@@ -26,6 +26,14 @@ body {
   overflow-x: hidden; /* Agregado para ocultar el desbordamiento horizontal */
   box-sizing: border-box; /* Agregado para incluir padding y border en el ancho */
 }
+nav, .links-desktop {
+  box-sizing: border-box;
+  width: 60%;
+}
+.theButtons{
+  width: 10%;
+  display: flex;
+}
 
 @keyframes animate {
   0% {
@@ -117,9 +125,13 @@ section .animate {
 
 .menu-links {
   position: absolute;
-  top: 55px;
-  right: 22px;
-  background-color: white;
+  top: 0px;
+  right: 100px;
+  border: white;
+  background: linear-gradient(-45deg, #1f242d, #333a49, #1f242d, #3e495b);
+  background-size: 800% 800%;
+  width: 100%;
+  animation: animate 15s ease infinite;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
@@ -131,8 +143,66 @@ section .animate {
   list-style: none;
 }
 
+.menu-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 5px;
+  display: block;
+  border: 1px solid white;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-links li  a:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
 .menu-links.open {
   max-height: 300px; /* Ajusta este valor según tus necesidades */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 0px 20px
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 7px;
+  border: 1px solid white;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;
+  border-radius: .2rem;
+  top:35px;
+  right:0px;
+  background-color: transparent;
+  min-width: 6px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  transition: max-height 0.2s ease-in-out; /* Agregado para animar el cambio de altura */
+  text-align: left; /* Agregado para alinear el texto a la derecha */
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+    border-radius: .2rem;
+  display: block;
+  border: 1px solid white;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: black;
 }
 /* FIN CSS SECTION */
 

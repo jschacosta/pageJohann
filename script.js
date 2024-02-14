@@ -1,4 +1,5 @@
-import { text } from "./text.js";
+import { text } from "./js/text.js";
+import { updateNavbarTexts, updateTitles } from "./js/language.js";
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
@@ -8,7 +9,8 @@ function toggleMenu() {
 // Agrega la función al objeto global window
 window.toggleMenu = toggleMenu;
 
-// Segunda función:carrusel de fotos
+// Declarar la variable global
+var selectedLanguage;
 
 function initSlides() {
   const slides = Array.from(document.querySelectorAll(".slide"));
@@ -42,20 +44,19 @@ function setTexts() {
   // Luego, selecciona todos los elementos .cardAbout
   var cards = document.querySelectorAll(".cardAbout");
 
-  // Para cada tarjeta, añade un event listener para el evento 'mouseover'
   cards.forEach(function (card) {
     card.addEventListener("mouseover", function () {
       // Cuando el mouse pasa sobre la tarjeta, cambia el contenido de .aboutDescription
       // basado en el id de la tarjeta
       switch (card.id) {
         case "card1":
-          aboutDescription.textContent = text.text1.en;
+          aboutDescription.textContent = text.text1[selectedLanguage];
           break;
         case "card2":
-          aboutDescription.textContent = text.text2.en;
+          aboutDescription.textContent = text.text2[selectedLanguage];
           break;
         case "card3":
-          aboutDescription.textContent = text.text3.en;
+          aboutDescription.textContent = text.text3[selectedLanguage];
           break;
       }
     });
@@ -83,10 +84,14 @@ function scrolling() {
         sec.classList.add("show-animate");
         if (sec.classList.contains("sec-1")) {
           arrowUp.style.opacity = "0";
+          arrowUp.style.display = "none";
           arrowDown.style.opacity = "0";
+          arrowDown.style.display = "none";
         } else {
           arrowUp.style.opacity = "1";
+          arrowUp.style.display = "block";
           arrowDown.style.opacity = "1";
+          arrowDown.style.display = "block";
         }
       } else {
         sec.classList.remove("show-animate");
@@ -154,12 +159,56 @@ function arrowsScroll() {
   });
 }
 
+function selectButton() {
+  // Detectar el idioma del navegador
+  var lang = navigator.language || navigator.userLanguage;
+  lang = lang.substr(0, 2); // Obtener solo los primeros dos caracteres
+
+  // Establecer el idioma del botón y llamar a changeLanguage() con el idioma detectado
+  var defaultOption = document.querySelector(
+    '.dropdown-content a[data-lang="' + lang + '"]'
+  );
+  if (defaultOption) {
+    document.getElementById("dropbtn").innerText = defaultOption.innerText;
+    selectedLanguage = lang;
+    changeLanguage(selectedLanguage);
+  }
+
+  // Cuando se selecciona una opción, cambiar el texto del botón y llamar a changeLanguage() con el nuevo idioma
+  document.querySelectorAll(".dropdown-content a").forEach(function (element) {
+    element.onclick = function () {
+      document.getElementById("dropbtn").innerText = this.innerText;
+      selectedLanguage = this.dataset.lang;
+      changeLanguage(selectedLanguage);
+      // Cerrar el menú desplegable
+      document.getElementById("dropdown-content").style.maxHeight = null;
+    };
+  });
+
+  document.getElementById("dropbtn").onclick = function () {
+    var content = document.getElementById("dropdown-content");
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  };
+}
+
+function changeLanguage(lang) {
+  // Aquí puedes poner tu lógica para cambiar el idioma de la página
+  console.log("Language changed to: " + lang);
+  updateNavbarTexts(selectedLanguage);
+  updateTitles(selectedLanguage);
+}
+
 function initAll() {
   scrolling();
   initSlides();
   setTexts();
   arrowsScroll();
   keySpaceNavigation();
+  selectButton();
 }
 
 // Llama a la función init cuando el DOM esté completamente cargado

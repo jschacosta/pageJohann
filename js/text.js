@@ -1,4 +1,43 @@
 export const text = {
+  navbar: {
+    first: {
+      en: "About",
+      es: "Sobre mi",
+      pt: "Sobre mim",
+    },
+    second: {
+      en: "Experience",
+      es: "Experiencia",
+      pt: "Experiência",
+    },
+    third: {
+      en: "Projects",
+      es: "Proyectos",
+      pt: "Projetos",
+    },
+    fourth: {
+      en: "Contact",
+      es: "Contacto",
+      pt: "Contato",
+    },
+  },
+  titles: {
+    subtitle: {
+      en: "Full Stack Developer",
+      es: "Desarrollador Full Stack",
+      pt: "Developer Full Stack",
+    },
+    button1: {
+      en: "Download CV",
+      es: "Descargar CV",
+      pt: "Baixar CV",
+    },
+    button2: {
+      en: "Contact me",
+      es: "Contáctame",
+      pt: "Contate-me",
+    },
+  },
   text1: {
     en: `During the pandemic, I embarked on a self-taught journey into
       programming, which ultimately led me to secure a position where
@@ -8,8 +47,8 @@ export const text = {
       planner and coordinator. Additionally, I've embarked on a
       personal mini-project, further demonstrating my passion for
       continuous learning and innovation in the field.`,
-    esss: "Hola",
-    frff: "Bonjour",
+    es: "Durante la pandemia, me embarqué en un viaje autodidacta hacia la programación, lo que finalmente me llevó a asegurar un puesto donde he seguido expandiendo mi conjunto de habilidades. Durante los últimos dos años, he prosperado en un entorno de trabajo remoto, dominando diversas tecnologías y asumiendo roles de liderazgo dentro de mi equipo como planificador y coordinador. Además, me embarqué en un mini-proyecto personal, demostrando aún más mi pasión por el aprendizaje continuo y la innovación en el campo.",
+    pt: "Durante a pandemia, embarquei em uma jornada autodidata na programação, o que eventualmente me levou a garantir uma posição onde continuei a expandir meu conjunto de habilidades. Nos últimos dois anos, tenho prosperado em um ambiente de trabalho remoto, dominando várias tecnologias e assumindo papéis de liderança dentro da minha equipe como planejador e coordenador. Além disso, embarquei em um mini-projeto pessoal, demonstrando ainda mais minha paixão pelo aprendizado contínuo e inovação no campo.",
   },
   text2: {
     en: `I studied Mechanical Civil Engineering for six years in Chile,

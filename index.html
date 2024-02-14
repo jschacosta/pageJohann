@@ -26,21 +26,25 @@
     <nav id="desktop-nav">
       <div class="nav-title">Johann Schwarze</div>
       <ul class="links-desktop">
-        <li><a href="./#about">About</a></li>
-        <li><a href="./#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-about" href="./#about">About</a></li>
+        <li><a class="nav-experience" href="./#experience">Experience</a></li>
+        <li><a class="nav-projects" href="#projects">Projects</a></li>
+        <li><a class="nav-contact" href="#contact">Contact</a></li>
       </ul>
-      <div class="hamburger-icon" onclick="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about" onclick="toggleMenu()">About</a></li>
-        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      <div style="display: flex; justify-content: flex-end; align-items: center; ">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn" id="dropbtn">Language</button>
+          <div class="dropdown-content" id="dropdown-content">
+            <a href="#" data-lang="es">ES</a>
+            <a href="#" data-lang="en">EN</a>
+            <a href="#" data-lang="pt">PT</a>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -51,15 +55,17 @@
         </div>
         <div class="container">
           <span class="text-1">Johann Schwarze</span>
-          <span class="text-2">Full Stack Developer</span>
+          <span class="text-2" id="subtitle">Full Stack Developer</span>
           <div class="btn-container">
             <button
+            id="button1"
               class="btn-home btn-color-1"
               onclick="window.open('./assets/resume-example.pdf')"
             >
               Download CV
             </button>
             <button
+            id="button2"
               class="btn-home btn-color-2"
               onclick="location.href='./#contact'"
             >
@@ -73,7 +79,7 @@
               style="margin-top: -3px"
               class="iconZoom"
               target="_blank"
-              onclick="window.open('https://github.com/jschacosta', '_blank')"
+              onclick="window.open('https://www.linkedin.com/in/johannsch/', '_blank')"
             />
             <img
               src="./assets/githubWhite.png"

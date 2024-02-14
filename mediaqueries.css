@@ -2,6 +2,7 @@
 @import url("./components/flipCard/mediaqueries.css");
 @import url("./components/carrousel/mediaqueries.css");
 @import url("./components/cardAbout/mediaqueries.css");
+@import url("./components/navbar/mediaqueries.css");
 
 @media screen and (min-width: 1500px) {
 
@@ -17,6 +18,7 @@
     .section-p{
         font-size:20px
     }
+   
 }
 
 @media screen and (max-width: 750px) {
@@ -42,6 +44,9 @@
       }
       .section__pic-main {
         width: 100%;
+      }
+      .theButtons{
+        width: 50%;
       }
 }
 
@@ -77,5 +82,8 @@
    
   .about-description {
     font-size: 10px;
+  }
+  .theButtons{
+    width: 50%;
   }
 }
