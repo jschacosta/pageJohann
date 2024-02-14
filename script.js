@@ -1,5 +1,9 @@
 import { text } from "./js/text.js";
-import { updateNavbarTexts, updateTitles } from "./js/language.js";
+import {
+  updateNavbarTexts,
+  updateTitles,
+  updateSection2,
+} from "./js/language.js";
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
   const icon = document.querySelector(".hamburger-icon");
@@ -50,13 +54,13 @@ function setTexts() {
       // basado en el id de la tarjeta
       switch (card.id) {
         case "card1":
-          aboutDescription.textContent = text.text1[selectedLanguage];
+          aboutDescription.textContent = text.sec2.text1[selectedLanguage];
           break;
         case "card2":
-          aboutDescription.textContent = text.text2[selectedLanguage];
+          aboutDescription.textContent = text.sec2.text2[selectedLanguage];
           break;
         case "card3":
-          aboutDescription.textContent = text.text3[selectedLanguage];
+          aboutDescription.textContent = text.sec2.text3[selectedLanguage];
           break;
       }
     });
@@ -200,6 +204,7 @@ function changeLanguage(lang) {
   console.log("Language changed to: " + lang);
   updateNavbarTexts(selectedLanguage);
   updateTitles(selectedLanguage);
+  updateSection2(selectedLanguage);
 }
 
 function initAll() {

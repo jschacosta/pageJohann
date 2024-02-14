@@ -26,8 +26,9 @@
     }
     nav ul li a{
         text-decoration: none;
+        display: block;
         color: white;
-        font-size: 18px;
+        font-size: 21px;
         font-weight: 500;
         margin: 0px 10px;
         border: 1px solid transparent; /* Agrega un borde transparente */

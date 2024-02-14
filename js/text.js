@@ -38,33 +38,75 @@ export const text = {
       pt: "Contate-me",
     },
   },
-  text1: {
-    en: `During the pandemic, I embarked on a self-taught journey into
-      programming, which ultimately led me to secure a position where
-      I've continued to expand my skill set. Over the past two years,
-      I've thrived in a remote work environment, mastering various
-      technologies and assuming leadership roles within my team as a
-      planner and coordinator. Additionally, I've embarked on a
-      personal mini-project, further demonstrating my passion for
-      continuous learning and innovation in the field.`,
-    es: "Durante la pandemia, me embarqué en un viaje autodidacta hacia la programación, lo que finalmente me llevó a asegurar un puesto donde he seguido expandiendo mi conjunto de habilidades. Durante los últimos dos años, he prosperado en un entorno de trabajo remoto, dominando diversas tecnologías y asumiendo roles de liderazgo dentro de mi equipo como planificador y coordinador. Además, me embarqué en un mini-proyecto personal, demostrando aún más mi pasión por el aprendizaje continuo y la innovación en el campo.",
-    pt: "Durante a pandemia, embarquei em uma jornada autodidata na programação, o que eventualmente me levou a garantir uma posição onde continuei a expandir meu conjunto de habilidades. Nos últimos dois anos, tenho prosperado em um ambiente de trabalho remoto, dominando várias tecnologias e assumindo papéis de liderança dentro da minha equipe como planejador e coordenador. Além disso, embarquei em um mini-projeto pessoal, demonstrando ainda mais minha paixão pelo aprendizado contínuo e inovação no campo.",
+  sec2: {
+    title: {
+      en: "About Me",
+      es: "Sobre mi",
+      pt: "Sobre mim",
+    },
+    subtitle: {
+      en: "Get to know me",
+      es: "Conóceme",
+      pt: "Conheça-me",
+    },
+    button1: {
+      title: {
+        en: "Experience",
+        es: "Experiencia",
+        pt: "Experiência",
+      },
+      subtitle: {
+        en: "3+ years Full Stack Development",
+        es: "3+ años de desarrollo Full Stack",
+        pt: "3+ anos de desenvolvimento Full Stack",
+      },
+    },
+    button2: {
+      title: {
+        en: "Education",
+        es: "Educación",
+        pt: "Educação",
+      },
+      subtitle: {
+        en: "B.Sc. in Civil Mechanical Engineering",
+        es: "Ingeniero Civil Mecánico",
+        pt: "Engenheiro Civil Mecânico",
+      },
+    },
+    button3: {
+      title: {
+        en: "Languages",
+        es: "Idiomas",
+        pt: "Idiomas",
+      },
+      subtitle: {
+        en: "Spanish (Native), English, Portuguese",
+        es: "Español (Nativo), Inglés, Portugués",
+        pt: "Espanhol (Nativo), Inglês, Português",
+      },
+    },
+    text1: {
+      en: `During the pandemic, I embarked on a self-taught journey into programming, which ultimately led me to secure a position where I've continued to expand my skill set. Over the past two years, I've thrived in a remote work environment, mastering various technologies and assuming leadership roles within my team as a planner and coordinator.Additionally, I've embarked on a personal mini-project, further demonstrating my passion for continuous learning and innovation in the field.`,
+      es: "Durante la pandemia, me embarqué en un viaje autodidacta hacia la programación, lo que finalmente me llevó a asegurar un puesto donde he seguido expandiendo mi conjunto de habilidades. Durante los últimos dos años, he prosperado en un entorno de trabajo remoto, dominando diversas tecnologías y asumiendo roles de liderazgo dentro de mi equipo como planificador y coordinador. Además, me embarqué en un mini-proyecto personal, demostrando aún más mi pasión por el aprendizaje continuo y la innovación en el campo.",
+      pt: "Durante a pandemia, embarquei em uma jornada autodidata na programação, o que eventualmente me levou a garantir uma posição onde continuei a expandir meu conjunto de habilidades. Nos últimos dois anos, tenho prosperado em um ambiente de trabalho remoto, dominando várias tecnologias e assumindo papéis de liderança dentro da minha equipe como planejador e coordenador. Além disso, embarquei em um mini-projeto pessoal, demonstrando ainda mais minha paixão pelo aprendizado contínuo e inovação no campo.",
+    },
+    text2: {
+      en: `I studied Mechanical Civil Engineering for six years in Chile,
+        where I gained valuable knowledge and practical experience. I
+        was actively involved as a sports delegate and served as a
+        teaching assistant. My education not only equipped me with
+        engineering expertise but also honed my analytical thinking
+        skills, essential for problem-solving and innovation.`,
+      esss: "Hola",
+      frss: "Bonjour",
+    },
+    text3: {
+      en: `I'm a Chilean who speaks Spanish fluently, having lived in Berlin for over 6 months, where I honed my English skills through travel and immersion. Additionally, I'm proficient in Portuguese, having also spent extended periods of time in Portuguese-speaking regions.`,
+      es: "Hola",
+      fr: "Bonjour",
+    },
   },
-  text2: {
-    en: `I studied Mechanical Civil Engineering for six years in Chile,
-      where I gained valuable knowledge and practical experience. I
-      was actively involved as a sports delegate and served as a
-      teaching assistant. My education not only equipped me with
-      engineering expertise but also honed my analytical thinking
-      skills, essential for problem-solving and innovation.`,
-    esss: "Hola",
-    frss: "Bonjour",
-  },
-  text3: {
-    en: `I'm a Chilean who speaks Spanish fluently, having lived in Berlin for over 6 months, where I honed my English skills through travel and immersion. Additionally, I'm proficient in Portuguese, having also spent extended periods of time in Portuguese-speaking regions.`,
-    es: "Hola",
-    fr: "Bonjour",
-  },
+
   text4: {
     en: `As team leader for a two-year web application project, I've refined
       leadership, coordination, and communication skills, ensuring project

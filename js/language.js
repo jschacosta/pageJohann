@@ -29,3 +29,22 @@ export const updateTitles = (selectedLanguage) => {
   document.getElementById("button2").textContent =
     text.titles.button2[selectedLanguage];
 };
+
+export const updateSection2 = (selectedLanguage) => {
+  document.getElementById("sec2-title").textContent =
+    text.sec2.title[selectedLanguage];
+  document.getElementById("sec2-subtitle").textContent =
+    text.sec2.subtitle[selectedLanguage];
+  document.getElementById("sec2-button1-title").textContent =
+    text.sec2.button1.title[selectedLanguage];
+  document.getElementById("sec2-button2-title").textContent =
+    text.sec2.button2.title[selectedLanguage];
+  document.getElementById("sec2-button3-title").textContent =
+    text.sec2.button3.title[selectedLanguage];
+  document.getElementById("sec2-button1-subtitle").textContent =
+    text.sec2.button1.subtitle[selectedLanguage];
+  document.getElementById("sec2-button2-subtitle").textContent =
+    text.sec2.button2.subtitle[selectedLanguage];
+  document.getElementById("sec2-button3-subtitle").textContent =
+    text.sec2.button3.subtitle[selectedLanguage];
+};

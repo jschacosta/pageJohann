@@ -2,10 +2,13 @@
     
 }
 @media screen and (max-width: 1000px) {
-    
+  nav ul li a{
+    font-size: 16px;
+    margin: 0px 4px;
+  }
 }
 @media screen and (max-width: 800px) {
-    
+ 
 }
 @media screen and (max-width: 700px) {
     nav .nav-title{
@@ -17,6 +20,7 @@
         padding-right: 10px;
         justify-content: space-between;
       }
+     
 }
 
 @media screen and (max-width: 650px) {
