@@ -38,6 +38,7 @@
     }   
     .components1 {
        flex-direction: column;
+       margin-top:75px
       }
       .container {
         width: 100%;
@@ -47,6 +48,9 @@
       }
       .theButtons{
         width: 50%;
+      }
+      .menu-links {
+        margin-top: -65px;
       }
 }
 
@@ -61,6 +65,7 @@
       transform: none;
     }
 
+
 .text-1 {
     font-size: 25px;
   }
@@ -68,7 +73,7 @@
     font-size: 20px;
   }
   .section__pic-main img {
-    height: 200px;
+    height: 160px;
     width: auto;
     z-index: 1;
   }
