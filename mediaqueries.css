@@ -20,13 +20,19 @@
 }
 
 @media screen and (max-width: 750px) {
+  .hamburger-icon {
+    display: flex;
+  }
+  .links-desktop{
+    display: none;
+  }
     .components2 {
-        flex-direction: column;
-        margin-top: -10px;
+      flex-direction: column;
+      margin-top: -10px;
     }
     .cardsFlip{
-        display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
     }   
     .components1 {
        flex-direction: column;
@@ -59,6 +65,7 @@
   .section__pic-main img {
     height: 200px;
     width: auto;
+    z-index: 1;
   }
   .iconAbout {
     height: 1.5rem;

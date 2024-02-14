@@ -1,20 +1,18 @@
 /* NAVBAR DESKTOP */
 #desktop-nav {
-    display: flex;
-    align-items: center;
-    /* margin: 0px; */
-    height: 5vh;
-    margin-top: 18px;
-    margin-left: 10px;
-    margin-right: 10px;
-    justify-content: space-around; 
-    /* background-color: #252526; */
-    color: white;
-    /* position: fixed; */
-    width: 100%;
-    z-index: 100;
-    flex-direction: row;
-    }
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  padding-top: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-around; 
+  color: white;
+  width: 100%;
+  z-index: 500;
+  flex-direction: row;
+  box-sizing: border-box; /* Agregado para incluir padding en el ancho total */
+}
   
     nav .nav-title{
       font-size: 24px;

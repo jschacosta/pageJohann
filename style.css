@@ -5,6 +5,7 @@
 @import url("./components/arrowIcon/arrowIcon.css");
 @import url("./components/navbar/navbar.css");
 @import url("./components/btn/btn.css");  
+@import url("./components/hamburgerIcon/hamburgerIcon.css");
 /* GLOBAL */
 * {
   margin: 0; /* Restablece el margen de todos los elementos a 0 */
@@ -101,6 +102,37 @@ section .animate {
   flex-direction: column;
   height: 20vh;
 }
+
+.menu-links {
+  position: absolute;
+  top: 55px;
+  right: 100px;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out; /* Corregido aquí */
+}
+
+.menu-links {
+  position: absolute;
+  top: 55px;
+  right: 22px;
+  background-color: white;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  z-index: 100; /* Asegúrate de que el z-index sea mayor que el de .section__pic-main */
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px; /* Ajusta este valor según tus necesidades */
+}
 /* FIN CSS SECTION */
 
 #home {
@@ -120,6 +152,7 @@ section .animate {
   justify-content: center;
   align-items: center;
   width: 30%;
+  z-index: 50;
 }
 .section__pic-main img {
   height: auto; /* Cambiado de 350px a auto */
