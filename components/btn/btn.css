@@ -17,6 +17,10 @@
     color: #252526;
     border: white 0.1rem solid;
   }
+  .btn-color-1:hover {
+    filter: brightness(0.7); /* Agregado para oscurecer la imagen al pasar el ratón por encima */
+  }
+
 
 
   .btn-color-2 {
@@ -27,7 +31,6 @@
   }
 
   .btn-color-2:hover {
-    cursor: pointer;
     background: white;
     color: #252526;
     border: white 0.1rem solid;

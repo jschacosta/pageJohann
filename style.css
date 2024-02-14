@@ -6,6 +6,7 @@
 @import url("./components/navbar/navbar.css");
 @import url("./components/btn/btn.css");  
 @import url("./components/hamburgerIcon/hamburgerIcon.css");
+@import url("./components/heartIcon/heartIcon.css");
 /* GLOBAL */
 * {
   margin: 0; /* Restablece el margen de todos los elementos a 0 */
@@ -200,6 +201,8 @@ section .animate {
 .iconZoom:hover {
   transform: scale(1.4);
 }
+
+
 
 .btn-container{
   margin-top: 20px;

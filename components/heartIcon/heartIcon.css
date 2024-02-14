@@ -1,0 +1,27 @@
+.iconHeart {
+    cursor: pointer;
+    height: 2.5rem;
+    margin:0px 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Añadida transición para transform */
+  }
+  
+  .iconHeart:hover {
+    animation: heartBeat 2s infinite;
+  }
+  @keyframes heartBeat {
+    from{
+      transform :scale(1);
+    }
+    14%{
+      transform :scale(1.5);
+    }
+    28%{
+      transform :scale(1);
+    }
+    42%{
+      transform :scale(1.5);
+    }
+    70%{
+      transform :scale(1);
+    }
+  }
