@@ -90,4 +90,10 @@
   .theButtons{
     width: 50%;
   }
+  #footer li a {
+    font-size: 14px;
+  }
+  p.text-end-final{
+    font-size: 10px;
+  }
 }
