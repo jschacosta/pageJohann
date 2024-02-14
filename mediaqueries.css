@@ -38,7 +38,7 @@
     }   
     .components1 {
        flex-direction: column;
-       margin-top:75px
+       margin-top:60px
       }
       .container {
         width: 100%;
@@ -50,7 +50,7 @@
         width: 50%;
       }
       .menu-links {
-        margin-top: -65px;
+        margin-top: -55px;
       }
 }
 
