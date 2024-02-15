@@ -59,7 +59,7 @@
         width: 200px;
         height: 200px;
     }
-    .sec-2 .animate, .sec-3 .animate , .sec-5.animate{
+    .sec-2 .animate, .sec-3 .animate , .sec-5 .animate{
       transition: none;
       transform: none;
     }
