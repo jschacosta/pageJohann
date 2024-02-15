@@ -400,8 +400,9 @@ section .animate {
 .item-front{
   display:flex;
   justify-content:center;
+  align-items: center;
   flex-direction: row; /* Mantén los elementos en una fila */
-  flex-basis: calc(50% - 10px); /* Ancho de cada elemento, ajustado para permitir un poco de espacio */
+  flex-basis: calc(50% - 25px); /* Ancho de cada elemento, ajustado para permitir un poco de espacio */
   margin: 5px; /* Espacio alrededor de cada elemento */
 }
 /* END SECTION 3  */

@@ -232,8 +232,32 @@ function experienceData() {
     // Añade más objetos aquí según sea necesario
   ];
 
+  var experience = [
+    { title: "Team Leadership", level: "", icon: "./assets/checkmark.png" },
+    {
+      title: "Scrum Methodology",
+      level: "",
+      icon: "./assets/checkmark.png",
+    },
+    { title: "Strategic Planning", level: "", icon: "./assets/checkmark.png" },
+    {
+      title: "Group Leadership",
+      level: "",
+      icon: "./assets/checkmark.png",
+    },
+    { title: "Team Collaboration", level: "", icon: "./assets/checkmark.png" },
+    {
+      title: "Project Coordination",
+      level: "",
+      icon: "./assets/checkmark.png",
+    },
+    // Añade más objetos aquí según sea necesario
+  ];
+
   // Paso 2: Selecciona el elemento .body-front
   var bodyFront = document.getElementById("body-front-1");
+
+  var bodyFront2 = document.getElementById("body-front-2");
 
   // Paso 3: Itera sobre la estructura de datos
   skills.forEach(function (skill) {
@@ -262,6 +286,30 @@ function experienceData() {
 
     // Paso 5: Añade el .item-front al .body-front
     bodyFront.appendChild(itemFront);
+  });
+
+  experience.forEach(function (skill) {
+    // Paso 4: Crea los elementos HTML
+    var itemFront = document.createElement("div");
+    itemFront.className = "item-front";
+
+    var img = document.createElement("img");
+    img.src = skill.icon;
+    img.alt = "Experience icon";
+    img.className = "icon";
+
+    var div = document.createElement("div");
+
+    var h3 = document.createElement("h3");
+    h3.innerText = skill.title;
+
+    // Añade los elementos creados al .item-front
+    div.appendChild(h3);
+    itemFront.appendChild(img);
+    itemFront.appendChild(div);
+
+    // Paso 5: Añade el .item-front al .body-front
+    bodyFront2.appendChild(itemFront);
   });
 }
 
