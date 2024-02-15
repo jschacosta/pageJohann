@@ -3,6 +3,7 @@ import {
   updateNavbarTexts,
   updateTitles,
   updateSection2,
+  updateSection3,
 } from "./js/language.js";
 function toggleMenu() {
   const menu = document.querySelector(".menu-links");
@@ -208,6 +209,60 @@ function changeLanguage(lang) {
   updateNavbarTexts(selectedLanguage);
   updateTitles(selectedLanguage);
   updateSection2(selectedLanguage);
+  updateSection3(selectedLanguage);
+}
+
+function experienceData() {
+  // Paso 1: Define la estructura de datos
+  var skills = [
+    { title: "HTML-CSS", level: "Experienced", icon: "./assets/checkmark.png" },
+    {
+      title: "Javascript",
+      level: "Experienced",
+      icon: "./assets/checkmark.png",
+    },
+    { title: "Vue js", level: "Experienced", icon: "./assets/checkmark.png" },
+    {
+      title: "React-Next",
+      level: "Intermediate",
+      icon: "./assets/checkmark.png",
+    },
+    { title: "Mongo DB", level: "Experienced", icon: "./assets/checkmark.png" },
+    { title: "AWS", level: "Intermediate", icon: "./assets/checkmark.png" },
+    // Añade más objetos aquí según sea necesario
+  ];
+
+  // Paso 2: Selecciona el elemento .body-front
+  var bodyFront = document.getElementById("body-front-1");
+
+  // Paso 3: Itera sobre la estructura de datos
+  skills.forEach(function (skill) {
+    // Paso 4: Crea los elementos HTML
+    var itemFront = document.createElement("div");
+    itemFront.className = "item-front";
+
+    var img = document.createElement("img");
+    img.src = skill.icon;
+    img.alt = "Experience icon";
+    img.className = "icon";
+
+    var div = document.createElement("div");
+
+    var h3 = document.createElement("h3");
+    h3.innerText = skill.title;
+
+    var p = document.createElement("p");
+    p.innerText = skill.level;
+
+    // Añade los elementos creados al .item-front
+    div.appendChild(h3);
+    div.appendChild(p);
+    itemFront.appendChild(img);
+    itemFront.appendChild(div);
+
+    // Paso 5: Añade el .item-front al .body-front
+    bodyFront.appendChild(itemFront);
+  });
 }
 
 function initAll() {
@@ -217,6 +272,7 @@ function initAll() {
   arrowsScroll();
   keySpaceNavigation();
   selectButton();
+  experienceData();
 }
 
 // Llama a la función init cuando el DOM esté completamente cargado

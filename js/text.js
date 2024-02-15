@@ -106,14 +106,39 @@ export const text = {
       fr: "Bonjour",
     },
   },
-
-  text4: {
-    en: `As team leader for a two-year web application project, I've refined
-      leadership, coordination, and communication skills, ensuring project
-      success amidst challenges.`,
-    esss: "Hola",
-    frff: "Bonjour",
+  sec3: {
+    title: {
+      en: "Experience",
+      es: "Experiencia",
+      pt: "Experiência",
+    },
+    subtitle: {
+      en: "Explore my",
+      es: "Explora mi",
+      pt: "Explore minha",
+    },
+    cardTitle1: {
+      en: "Technical Skills",
+      es: "Habilidades Técnicas",
+      pt: "Habilidades Técnicas",
+    },
+    cardTitle2: {
+      en: "Technical Expertise",
+      es: "Experiencia Técnica",
+      pt: "Experiência Técnica",
+    },
+    bodyCard1: {
+      en: "As a full-stack developer, I specialize in Vue.js and React for dynamic user interfaces, advanced JavaScript for robust server-side applications, and non-relational databases for efficient data management. I frequently use AWS tools to deploy and maintain applications, ensuring optimal performance in cloud environments.",
+      es: "Como desarrollador full-stack, me especializo en Vue.js y React para interfaces de usuario dinámicas, JavaScript avanzado para aplicaciones robustas en el lado del servidor y bases de datos no relacionales para una gestión eficiente de datos. Utilizo con frecuencia herramientas de AWS para implementar y mantener aplicaciones, garantizando un rendimiento óptimo en entornos en la nube.",
+      pt: "Como desenvolvedor full-stack, me especializo em Vue.js e React para interfaces de usuário dinâmicas, JavaScript avançado para aplicativos robustos no lado do servidor e bancos de dados não relacionais para gerenciamento eficiente de dados. Uso frequentemente ferramentas da AWS para implantar e manter aplicativos, garantindo desempenho ideal em ambientes de nuvem.",
+    },
+    bodyCard2: {
+      en: "As team leader for a two-year web application project, I've refined leadership, coordination, and communication skills, ensuring project success amidst challenges.",
+      es: "Como líder de equipo para un proyecto de aplicación web de dos años, he perfeccionado habilidades de liderazgo, coordinación y comunicación, garantizando el éxito del proyecto en medio de desafíos.",
+      pt: "Como líder de equipe para um projeto de aplicativo da web de dois anos, aprimorei habilidades de liderança, coordenação e comunicação, garantindo o sucesso do projeto em meio a desafios.",
+    },
   },
+
   text5: {
     en: ` Apuesta Laucha is my first fully developed web application. It allows
       users to join tournaments where they predict sports outcomes,

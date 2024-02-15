@@ -48,3 +48,19 @@ export const updateSection2 = (selectedLanguage) => {
   document.getElementById("sec2-button3-subtitle").textContent =
     text.sec2.button3.subtitle[selectedLanguage];
 };
+
+export const updateSection3 = (selectedLanguage) => {
+  document.getElementById("sec3-title").textContent =
+    text.sec3.title[selectedLanguage];
+  document.getElementById("sec3-subtitle").textContent =
+    text.sec3.subtitle[selectedLanguage];
+  document.getElementById("sec3-cardTitle1").textContent =
+    text.sec3.cardTitle1[selectedLanguage];
+  document.getElementById("sec3-cardTitle2").textContent =
+    text.sec3.cardTitle2[selectedLanguage];
+
+  document.getElementById("body-back-1").textContent =
+    text.sec3.bodyCard1[selectedLanguage];
+  // document.getElementById("body-back-2").textContent =
+  //   text.sec3.bodyCard2[selectedLanguage];
+};

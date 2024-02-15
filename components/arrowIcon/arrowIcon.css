@@ -1,4 +1,5 @@
 .arrowDown {
+    display: none;
     right: 1.5rem;
     height: 2.5rem;
     bottom:3rem; 
@@ -9,6 +10,7 @@
 }
 
 .arrowUp {
+    display: none;
     cursor: pointer;
     right: 1.5rem;
     height: 2.5rem;

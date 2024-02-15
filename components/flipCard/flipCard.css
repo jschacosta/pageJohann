@@ -2,33 +2,41 @@
     height: 450px;
     width: 450px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: transform 1500ms;
     transform-style: preserve-3d;
     margin: 0px 40px;
     border: white 0.15rem solid;
-    
     border-radius: 2rem;
-
 }
 
 .flipCard:hover{
-cursor: pointer;
-transform: rotateY(180deg);
-border: white 0.15rem solid;
+    cursor: pointer;
+    transform: rotateY(180deg);
+    border: white 0.15rem solid;
 }
 
-.front,.back{
+.flipCard:hover .front{
+    display: none;
+}
+
+.front, .back{
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: absolute; /* Asegúrate de que .front y .back tengan posición absoluta */
     border-radius: 2rem;
-    backface-visibility: hidden;
+    backface-visibility: hidden; /* Oculta el elemento que está en la parte posterior de la rotación */
+    color: white;
 }
 
-.front{
-    /* background-color: tomato; */
-}
 
 .back{
     transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 80%;
 }

@@ -51,6 +51,18 @@
       .menu-links {
         margin-top: -5px;
       }
+      .title-front{
+        font-size: 20px;
+        font-weight: 600;
+      
+      }
+      .body-front{
+        display: flex;
+        font-size: 12px;
+      }
+      .back{
+        font-size: 12px;
+      }
 }
 
 @media screen and (max-width: 600px) {
