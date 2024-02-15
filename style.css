@@ -469,6 +469,7 @@ form .action{
 
 
 form .icons a{
+  cursor: pointer;
   border: 1px solid white;
   border-radius: 50%;
   line-height: 36px;
