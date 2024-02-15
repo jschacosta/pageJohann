@@ -86,7 +86,10 @@ function scrolling() {
       let height = sec.offsetHeight;
       if (top >= offset && top < offset + height) {
         sec.classList.add("show-animate");
-        if (sec.classList.contains("sec-1")) {
+        if (
+          sec.classList.contains("sec-1") ||
+          sec.classList.contains("sec-5")
+        ) {
           arrowUp.style.opacity = "0";
           arrowUp.style.display = "none";
           arrowDown.style.opacity = "0";

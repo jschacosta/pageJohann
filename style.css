@@ -19,7 +19,7 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   background: linear-gradient(-45deg, #1f242d, #333a49, #1f242d, #3e495b);
-  background-size: 800% 800%;
+  background-size: 1000% 1000%;
   width: 100%;
   height: 100vh; /* Cambiado de 100% a 100vh */
   animation: animate 15s ease infinite;
@@ -62,7 +62,7 @@ footer {
 
 p.text-end-final {
   color: white;
-  font-size: 18px;
+  font-size: 12px;
   margin-top: 10px;
   margin-bottom: 30px;
 }
@@ -89,6 +89,13 @@ section .animate {
 }
 .sec-3.show-animate .animate {
   transform: translateX(0);
+}
+
+.sec-5 .animate {
+  transform: scale(.7)
+}
+.sec-5.show-animate .animate {
+  transform: scale(1)
 }
 .section-p {
   display: flex;
@@ -172,6 +179,7 @@ section .animate {
   color: white;
   padding: 7px;
   margin-left: 30px;
+  margin-top:5px;
   border: 1px solid white;
   border-radius: 0.2rem;
   cursor: pointer;
@@ -182,7 +190,7 @@ section .animate {
   overflow: hidden;
   position: absolute;
   border-radius: .2rem;
-  top:35px;
+  top:40px;
   right:0px;
   background-color: transparent;
   min-width: 6px;
@@ -365,3 +373,134 @@ section .animate {
   min-width: 300px; /* Ajusta este valor al ancho mínimo que prefieras */
 }
 /* END SECTION 3  */
+
+/* SECTION 4 */
+#projects {
+  position: relative;
+}
+.components4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  height: 80vh;
+}
+
+/* END SECTION 4  */
+
+/* SECTION 5 */
+#contact {
+  position: relative;
+}
+form{
+  margin: 0px auto;
+  margin-top: -40px ;
+  max-width: 80%;
+  border-radius: 4px;
+  padding: 55px 30px;
+  height: 70vh;
+  width: 50%;
+  padding: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+}
+form a {
+  text-decoration: none;
+  color: white;
+}
+
+form .half{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+form .half .item{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+form label{
+  display: block;
+  font-size: 13px;
+  letter-spacing: 3.5px;
+  margin-bottom: 16px;
+}
+
+form .half .item input{
+  background: transparent;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  outline: 0;
+  padding: 12px;
+  width: 100%;
+  height: 20px;
+  font-size: 17px;
+}
+
+form .full{
+  margin-bottom: 24px;
+}
+
+form .full textarea {
+  background: transparent;
+  border-radius: 1rem;
+  border: 1px solid white;
+  outline: 0;
+  padding: 12px 12px;
+  width: 100%;
+  height: 100px;
+  font-size: 17px;
+  color: #f1f1f1;
+}
+
+form .action{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+
+
+form .icons a{
+  border: 1px solid white;
+  border-radius: 50%;
+  line-height: 36px;
+  text-align: center;
+  font-weight: 600;
+  width: 38px;
+  margin-right: 10px;
+}
+
+form .half .item input:focus, form .full textarea:focus, form .action input[type="reset"]:hover, form .icons a:hover{
+  background: rgba(255,255,255,0.075);
+  color: #f1f1f1;
+}
+
+@media (max-width: 600px){
+  form{
+    width: 100%;
+    margin-top: -15px ;
+  }
+
+  form .half .item input, form .full textarea {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%; /* Ajusta este valor según tus necesidades */
+  }
+
+  form .action{
+    display: flex;
+    flex-direction: column;
+  }
+  form .icons{
+    margin:20px 0px;
+  }
+}
+
+/* END SECTION 5  */
