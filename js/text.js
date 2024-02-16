@@ -97,13 +97,13 @@ export const text = {
         teaching assistant. My education not only equipped me with
         engineering expertise but also honed my analytical thinking
         skills, essential for problem-solving and innovation.`,
-      esss: "Hola",
-      frss: "Bonjour",
+      es: "Estudié Ingeniería Civil Mecánica durante seis años en Chile, donde adquirí conocimientos valiosos y experiencia práctica. Estuve activamente involucrado como delegado deportivo y fui asistente de enseñanza. Mi educación no solo me equipó con experiencia en ingeniería, sino que también perfeccionó mis habilidades de pensamiento analítico, esenciales para la resolución de problemas y la innovación.",
+      pt: "Estudei Engenharia Civil Mecânica por seis anos no Chile, onde adquiri conhecimentos valiosos e experiência prática. Estive ativamente envolvido como delegado esportivo e atuei como assistente de ensino. Minha educação não apenas me equipou com experiência em engenharia, mas também aprimorou minhas habilidades de pensamento analítico, essenciais para a resolução de problemas e inovação.",
     },
     text3: {
       en: `I'm a Chilean who speaks Spanish fluently, having lived in Berlin for over 6 months, where I honed my English skills through travel and immersion. Additionally, I'm proficient in Portuguese, having also spent extended periods of time in Portuguese-speaking regions.`,
-      es: "Hola",
-      fr: "Bonjour",
+      es: "Soy chileno y hablo español con fluidez, habiendo vivido en Berlín durante más de 6 meses, donde perfeccioné mis habilidades en inglés a través de viajes e inmersión. Además, tengo un dominio del portugués, habiendo pasado también periodos prolongados en regiones de habla portuguesa.",
+      pt: "Sou chileno e falo espanhol fluentemente, tendo morado em Berlim por mais de 6 meses, onde aprimorei minhas habilidades em inglês por meio de viagens e imersão. Além disso, sou proficiente em português, tendo passado também períodos prolongados em regiões de língua portuguesa.",
     },
   },
   sec3: {

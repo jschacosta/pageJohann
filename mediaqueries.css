@@ -111,4 +111,19 @@
   p.text-end-final{
     font-size: 10px;
   }
+
+
+  .image-card {
+    width: 100px;
+    height: 150px;
+  }
+  .image-card.phone:hover{
+    width: 100px;
+    height: 222px;
+  }
+  .image-card.desktop:hover{
+    width: 220px;
+    height: 100px;
+    transform: translateY(20px);
+  }
 }
