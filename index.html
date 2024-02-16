@@ -160,7 +160,7 @@
       </div>
       <div class="components3 animate">
         <div class="cardsFlip">
-          <div class="flipCard" id="flipCard1">
+          <div class="flipCard" onclick="flipCardOnClick('flipCard1')" id="flipCard1">
             <div class="front">
               <div class="title-front" id="sec3-cardTitle1">
                 Technical Skills
@@ -171,7 +171,7 @@
             </div>
             <div class="back" id="body-back-1">Back</div>
           </div>
-          <div class="flipCard" id="flipCard2">
+          <div class="flipCard" onclick="flipCardOnClick('flipCard2')" id="flipCard2">
             <div class="front">
               <div class="title-front" id="sec3-cardTitle2">
                 Technical Skills
@@ -266,6 +266,7 @@
         Copyright &#169; 2024 Johann Schwarze. All Rights Reserved.
       </p>
     </footer>
+    <div id="toast" class="toast"></div>
     <script type="module" src="script.js"></script>
   </body>
 </html>

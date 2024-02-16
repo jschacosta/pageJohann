@@ -1,0 +1,30 @@
+.toast {
+    visibility: hidden;
+    min-width: 50px;
+    margin-left: -125px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    background-color: green;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    transform: translateY(100%); /* Inicia el toast 100% debajo de su posición original */
+    transition: visibility 0.1s, opacity 0.5s, transform 0.5s ease-out; /* Añade una transición para la transformación */
+  }
+
+  .toast.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0); /* Mueve el toast a su posición original */
+  }
+
+  .toast-error {
+    background-color: rgba(243, 68, 28, 0.864);
+  }
+  .toast-success {
+    background-color: green;
+  }

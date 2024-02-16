@@ -1,4 +1,5 @@
 import { text } from "./js/text.js";
+import { submitForm } from "./js/fetch.js";
 import {
   updateNavbarTexts,
   updateTitles,
@@ -16,7 +17,7 @@ window.toggleMenu = toggleMenu;
 
 // Declarar la variable global
 var selectedLanguage;
-
+document.querySelector(".components5").addEventListener("submit", submitForm);
 function initSlides() {
   const slides = Array.from(document.querySelectorAll(".slide"));
   let currentIndex = 0;
@@ -312,6 +313,17 @@ function experienceData() {
     bodyFront2.appendChild(itemFront);
   });
 }
+
+function flipCardOnClick(flipCard) {
+  var flipCard = document.getElementById(flipCard);
+  console.log(flipCard.style.transform);
+  if (flipCard.style.transform == "rotateY(180deg)") {
+    flipCard.style.transform = "rotateY(0deg)";
+  } else {
+    flipCard.style.transform = "rotateY(180deg)";
+  }
+}
+window.flipCardOnClick = flipCardOnClick;
 
 function initAll() {
   scrolling();

@@ -18,10 +18,6 @@
     border: white 0.15rem solid;
 }
 
-.flipCard:hover .front{
-    display: none;
-}
-
 .front, .back{
     height: 100%;
     width: 100%;
@@ -31,12 +27,45 @@
     color: white;
 }
 
+.front {
+    transform: rotateY(-1deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
 
-.back{
-    transform: rotateY(180deg);
+.back {
+    transform: rotateY(179deg);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80%;
     width: 80%;
+}
+
+.title-front{
+    font-size: 28px;
+    font-weight: 700;
+    margin: 10px;
+    height: 20%;
+}
+
+.body-front{
+    display: flex;
+    height: 80%;
+    flex-direction: row;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    justify-content: space-around; /* Espacio alrededor de los elementos para una distribución uniforme */
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.item-front{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row; /* Mantén los elementos en una fila */
+    flex-basis: calc(50% - 25px); /* Ancho de cada elemento, ajustado para permitir un poco de espacio */
+    margin: 5px; /* Espacio alrededor de cada elemento */
 }
