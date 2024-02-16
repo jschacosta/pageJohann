@@ -325,6 +325,40 @@ function flipCardOnClick(flipCard) {
 }
 window.flipCardOnClick = flipCardOnClick;
 
+function validateEmail() {
+  var emailInput = document.getElementById("email");
+  var errorElement = document.getElementById("email-error");
+  var submitButton = document.getElementById("buttonSubmit");
+
+  // Simple pattern for email validation
+  var pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+  emailInput.addEventListener("input", function () {
+    var email = this.value;
+
+    if (email.match(pattern)) {
+      errorElement.style.display = "none";
+      submitButton.disabled = false;
+    } else {
+      errorElement.style.display = "none";
+      submitButton.disabled = true;
+    }
+  });
+
+  emailInput.addEventListener("focus", function () {
+    errorElement.style.display = "none";
+  });
+
+  emailInput.addEventListener("blur", function () {
+    var email = this.value;
+
+    if (!email.match(pattern)) {
+      errorElement.style.display = "block";
+      submitButton.disabled = true;
+    }
+  });
+}
+
 function initAll() {
   scrolling();
   initSlides();
@@ -333,6 +367,7 @@ function initAll() {
   keySpaceNavigation();
   selectButton();
   experienceData();
+  validateEmail();
 }
 
 // Llama a la función init cuando el DOM esté completamente cargado
