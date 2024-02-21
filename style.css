@@ -382,9 +382,11 @@ section .animate {
 }
 .components4 {
   display: flex;
-  align-items: flex-start;
-  justify-content: center;  
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start ;
   min-height: 80vh;
+  margin: 0px 15px;
 }
 .image-card {
   width: 200px;
@@ -426,6 +428,8 @@ section .animate {
 .images-container {
   display: flex;
   flex-direction: row; /* Asegura que las imágenes se muestren una al lado de la otra */
+  overflow-x: auto; /* Añade un desplazamiento horizontal cuando las imágenes son demasiado anchas */
+  max-width: 100%; /* Asegura que el contenedor no se expanda más allá de su contenedor padre */
 }
 
 
@@ -549,3 +553,155 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
 }
 
 /* END SECTION 5  */
+
+
+
+.list-project {
+  width: 350px; /* Ancho fijo de 350px */
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0px 10px;
+}
+
+
+
+.card-list-project{
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  border:1.5px solid grey;
+  overflow: hidden;
+  position: relative;
+  transition: .3s ease-in-out;
+  color: white;
+}
+.card-list-project:active {
+  background-color: #f0f0f0; /* Cambia el color de fondo cuando el usuario hace clic en un .card-list-project */
+}
+
+.card-list-project * {
+  user-select: none; /* Hace que todos los textos dentro de un .card-list-project no sean seleccionables */
+}
+
+.title-list-project{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  font-size: 20px;
+  color: white;
+
+}
+
+.projects-chips{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30%;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  /* box-shadow: 6px 6px 20px rgb(109, 109, 109); */
+  transition: .3s ease-in-out
+}
+.chip{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px 12px;
+  
+  border-radius: 12px;
+  background-color: white;
+  color: black;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+
+.content-project {
+  flex-grow: 1; /* Hace que .content-project ocupe el resto del espacio disponible */
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinea los elementos hijos al principio del contenedor */
+  align-items: center;
+  overflow-y: auto; /* Hace que el elemento sea desplazable en el eje Y */
+}
+.element-project{
+  box-sizing: border-box; /* Incluye el relleno y el borde en el ancho y la altura del elemento */
+  height: 100%;
+  width: 100%; /* Utiliza todo el ancho del contenedor */
+  position: relative; /* Añadido para posicionar absolutamente .content-project-body respecto a este elemento */
+  /* margin: 10px; */ /* Comentado para eliminar el margen */
+  margin-bottom: 20px;
+}
+
+.content-project-img{
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.content-project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  margin: 10px;
+  border-radius: 20px;
+}
+.content-project-title{
+  height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  color: white;
+
+}
+.project-title{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 70%;
+  height: 100%;
+  font-size: 18px;
+  margin: 25px;
+  color: white;
+}
+.project-actions{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.content-project-body{
+  height: 100vh; /* Ajustado a 100vh */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}

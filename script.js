@@ -18,6 +18,7 @@ window.toggleMenu = toggleMenu;
 // Declarar la variable global
 var selectedLanguage;
 document.querySelector(".components5").addEventListener("submit", submitForm);
+
 function initSlides() {
   const slides = Array.from(document.querySelectorAll(".slide"));
   let currentIndex = 0;
@@ -326,6 +327,7 @@ function flipCardOnClick(flipCard) {
 window.flipCardOnClick = flipCardOnClick;
 
 function validateEmail() {
+  console.log("validateEmail is running");
   var emailInput = document.getElementById("email");
   var errorElement = document.getElementById("email-error");
   var submitButton = document.getElementById("buttonSubmit");
@@ -359,7 +361,130 @@ function validateEmail() {
   });
 }
 
+function addClickEventCardProject() {
+  // Obtén todos los elementos .card-list-project
+  const cardListProjects = document.querySelectorAll(".card-list-project");
+
+  // Añade un controlador de eventos de clic a cada .card-list-project
+  cardListProjects.forEach((cardListProject, index) => {
+    cardListProject.addEventListener("click", function () {
+      // Obtén el .content-project-title correspondiente
+      const projectTitle = document.querySelector(
+        `#project${index + 1} .content-project-img`
+      );
+
+      // Obtén el .content-project
+      const contentProject = document.querySelector(".content-project");
+
+      // Calcula la posición del .content-project-title en relación con el .content-project
+      const position =
+        projectTitle.getBoundingClientRect().top -
+        contentProject.getBoundingClientRect().top +
+        contentProject.scrollTop;
+
+      // Desplaza el scroll de .content-project al .content-project-title correspondiente
+      contentProject.scrollTop = position;
+    });
+  });
+}
+
+let currentElementIndex = null;
+
+function handleScroll(event) {
+  console.log("activando");
+  const container = event.target;
+  const containerRect = container.getBoundingClientRect();
+  const elements = document.querySelectorAll(".content-project-title");
+  let newElementIndex = null;
+
+  // Obtén las dimensiones de #projects
+  const projectsRect = document
+    .querySelector("#projects")
+    .getBoundingClientRect();
+
+  // Verifica si #projects está completamente visible
+  const isProjectsVisible =
+    projectsRect.top >= 0 && projectsRect.bottom <= window.innerHeight;
+  console.log("activando 1");
+  // Si #projects no está completamente visible, no hagas nada
+  // if (!isProjectsVisible) {
+  //   return;
+  // }
+  console.log("activando 2");
+
+  // Si se desplaza hacia arriba al máximo, enfoca el primer elemento
+  if (document.documentElement.scrollTop === 0) {
+    console.log("caso1");
+    newElementIndex = 0;
+  } else {
+    console.log("caso2");
+    // De lo contrario, determina qué .element-project está actualmente en la vista
+    for (let i = 0; i < elements.length; i++) {
+      const elementRect = elements[i].getBoundingClientRect();
+      if (
+        elementRect.top < containerRect.bottom &&
+        elementRect.bottom > containerRect.top
+      ) {
+        newElementIndex = i;
+        break;
+      }
+    }
+  }
+
+  // Si el elemento actual ha cambiado, actualiza el color de los elementos
+  if (newElementIndex !== currentElementIndex && newElementIndex !== -1) {
+    console.log("activando 3");
+    const titles = document.querySelectorAll(".title-list-project");
+    const cards = document.querySelectorAll(".card-list-project");
+
+    if (currentElementIndex !== null) {
+      titles[currentElementIndex].style.color = "grey"; // Restaura el color del texto original
+      cards[currentElementIndex].style.backgroundColor = "transparent"; // Restaura el color de fondo original
+      cards[currentElementIndex].style.border = 1 + "px solid grey"; // Restaura el color de fondo original
+    }
+    titles[newElementIndex].style.color = "white"; // Cambia el color del texto a naranja
+    cards[newElementIndex].style.backgroundColor = "rgba(255, 255, 255, 0.3)"; // Cambia el color de fondo a blanco claro
+    cards[newElementIndex].style.border = 1 + "px solid white"; // Cambia el color de fondo a naranja claro
+    currentElementIndex = newElementIndex;
+  }
+}
+
+// Obtén las referencias a los elementos
+var empty1 = document.querySelector(".empty1");
+var empty2 = document.querySelector(".empty2");
+var contentProject = document.querySelector(".content-project");
+
+// Función para verificar si un elemento está completamente visible
+function isElementCompletelyVisible(el) {
+  var rect = el.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= window.innerHeight &&
+    rect.right <= window.innerWidth
+  );
+}
+
+// Controlador de eventos de desplazamiento para la ventana
+window.addEventListener("scroll", function (event) {
+  // Verifica si ambos elementos están completamente visibles
+  if (
+    isElementCompletelyVisible(empty1) &&
+    isElementCompletelyVisible(empty2)
+  ) {
+    // Habilita el desplazamiento en .content-project
+    contentProject.style.overflowY = "scroll";
+  } else {
+    // Deshabilita el desplazamiento en .content-project
+    contentProject.style.overflowY = "hidden";
+  }
+});
+
+// Controlador de eventos de desplazamiento para .content-project
+contentProject.addEventListener("scroll", handleScroll);
+
 function initAll() {
+  console.log("initAll is running");
   scrolling();
   initSlides();
   setTexts();
@@ -368,6 +493,8 @@ function initAll() {
   selectButton();
   experienceData();
   validateEmail();
+  addClickEventCardProject();
+  handleScroll();
 }
 
 // Llama a la función init cuando el DOM esté completamente cargado
