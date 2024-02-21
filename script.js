@@ -217,41 +217,69 @@ function changeLanguage(lang) {
 function experienceData() {
   // Paso 1: Define la estructura de datos
   var skills = [
-    { title: "HTML-CSS", level: "Experienced", icon: "./assets/checkmark.png" },
+    {
+      title: "HTML-CSS",
+      level: "Experienced",
+      icon: "./assets/icons/html5.svg",
+    },
     {
       title: "Javascript",
       level: "Experienced",
-      icon: "./assets/checkmark.png",
+      icon: "./assets/icons/js-dark.svg",
     },
-    { title: "Vue js", level: "Experienced", icon: "./assets/checkmark.png" },
+    {
+      title: "Vue js",
+      level: "Experienced",
+      icon: "./assets/icons/vuejs-dark.svg",
+    },
     {
       title: "React-Next",
       level: "Intermediate",
-      icon: "./assets/checkmark.png",
+      icon: "./assets/icons/react-dark.svg",
     },
-    { title: "Mongo DB", level: "Experienced", icon: "./assets/checkmark.png" },
-    { title: "AWS", level: "Intermediate", icon: "./assets/checkmark.png" },
+    {
+      title: "Mongo DB",
+      level: "Experienced",
+      icon: "./assets/icons/database-dark.svg",
+    },
+    {
+      title: "AWS",
+      level: "Intermediate",
+      icon: "./assets/icons/aws-dark.svg",
+    },
     // Añade más objetos aquí según sea necesario
   ];
 
   var experience = [
-    { title: "Team Leadership", level: "", icon: "./assets/checkmark.png" },
+    {
+      title: "Team Leadership",
+      level: "",
+      icon: "./assets/icons/person-chalkboard.svg",
+    },
     {
       title: "Scrum Methodology",
       level: "",
-      icon: "./assets/checkmark.png",
+      icon: "./assets/icons/table-columns.svg",
     },
-    { title: "Strategic Planning", level: "", icon: "./assets/checkmark.png" },
     {
-      title: "Group Leadership",
+      title: "Strategic Planning",
       level: "",
-      icon: "./assets/checkmark.png",
+      icon: "./assets/icons/list-check.svg",
     },
-    { title: "Team Collaboration", level: "", icon: "./assets/checkmark.png" },
+    {
+      title: "Intelligent Web Design",
+      level: "",
+      icon: "./assets/icons/figma.svg",
+    },
+    {
+      title: "Team Collaboration",
+      level: "",
+      icon: "./assets/icons/people-dark.svg",
+    },
     {
       title: "Project Coordination",
       level: "",
-      icon: "./assets/checkmark.png",
+      icon: "./assets/icons/diagram-project.svg",
     },
     // Añade más objetos aquí según sea necesario
   ];
@@ -270,6 +298,7 @@ function experienceData() {
     var img = document.createElement("img");
     img.src = skill.icon;
     img.alt = "Experience icon";
+    img.style.margin = "0 10px";
     img.className = "icon";
 
     var div = document.createElement("div");
@@ -297,6 +326,7 @@ function experienceData() {
 
     var img = document.createElement("img");
     img.src = skill.icon;
+    img.style.margin = "0 10px";
     img.alt = "Experience icon";
     img.className = "icon";
 

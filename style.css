@@ -621,8 +621,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
   justify-content: center;
   align-items: center;
   margin: 5px;
-  padding: 5px 12px;
-  
+  padding: 5px 10px;
   border-radius: 12px;
   background-color: white;
   color: black;
@@ -630,6 +629,29 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
   font-weight: 600;
   cursor: pointer;
   transition: .3s ease-in-out;
+}
+.chip:hover {
+  filter: brightness(80%);
+}
+.chip-green{
+  background-color:#42b883;
+  color: white;
+}
+.chip-yellow{
+  background-color: #f4d35e;
+  color: black
+}
+.chip-blue{
+  background-color: #3858e9;
+  color: white;
+}
+.chip-black{
+  background-color: #000000;
+  color: white;
+}
+.chip-grey{
+  background-color: #888787;
+  color: white;
 }
 
 
