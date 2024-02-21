@@ -119,6 +119,9 @@ section .animate {
   flex-direction: column;
   height: 20vh;
 }
+.titles * {
+  user-select: none; /* Hace que todos los textos dentro de un .card-list-project no sean seleccionables */
+}
 
 .menu-links {
   position: absolute;
@@ -256,6 +259,7 @@ section .animate {
 }
 
 
+
 .text-1 {
   color: white;
   font-size: 40px;
@@ -270,6 +274,9 @@ section .animate {
   color: yellowgreen;
   opacity: 0; /* Oculta el texto al inicio */
   animation: text2 3s forwards; /* Agrega una animación para la opacidad y mantiene la animación original */
+}
+.text-2{
+  user-select: none; /* Hace que todos los textos dentro de un .card-list-project no sean seleccionables */
 }
 .iconZoom {
   cursor: pointer;
