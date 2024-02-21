@@ -15,6 +15,13 @@ function toggleMenu() {
 // Agrega la función al objeto global window
 window.toggleMenu = toggleMenu;
 
+//para que al recargar siempre empiece del principio
+window.onbeforeunload = function () {
+  console.log("scrolling to top");
+  history.scrollRestoration = "manual";
+  window.scrollTo(0, 0);
+};
+
 // Declarar la variable global
 var selectedLanguage;
 document.querySelector(".components5").addEventListener("submit", submitForm);
