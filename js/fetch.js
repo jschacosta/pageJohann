@@ -6,9 +6,13 @@ export function submitForm(event) {
   console.log("toast", toast);
 
   // Get the values from the input fields
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var message = document.getElementById("message").value;
+  var nameField = document.getElementById("name");
+  var emailField = document.getElementById("email");
+  var messageField = document.getElementById("message");
+
+  var name = nameField.value;
+  var email = emailField.value;
+  var message = messageField.value;
 
   // Create the data object
   var data = {
@@ -36,6 +40,11 @@ export function submitForm(event) {
           toast.className = toast.className.replace("show", "");
         }, 3000);
         console.log("Success:", data);
+
+        // Clear the input fields
+        nameField.value = "";
+        emailField.value = "";
+        messageField.value = "";
       } else {
         throw new Error("No message in data");
       }
