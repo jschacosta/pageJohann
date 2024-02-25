@@ -31,4 +31,7 @@
         width: 300px;
         margin: 10px 0px;
     }
+    .item-front{
+        font-size: 10px;
+    }
 }

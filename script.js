@@ -265,7 +265,7 @@ function experienceData() {
     },
     {
       title: "Scrum Methodology",
-      level: "",
+      level: "Scrum Methodology",
       icon: "./assets/icons/table-columns.svg",
     },
     {
