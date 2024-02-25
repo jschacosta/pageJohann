@@ -12,6 +12,10 @@ function toggleMenu() {
   menu.classList.toggle("open");
   icon.classList.toggle("open");
 }
+//bloquear girado de telefono
+if (window.screen.orientation) {
+  window.screen.orientation.lock("portrait");
+}
 // Agrega la función al objeto global window
 window.toggleMenu = toggleMenu;
 
