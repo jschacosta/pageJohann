@@ -1,423 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Johann Schwarze-Developer</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <script src="https://kit.fontawesome.com/012e8af5cd.js" crossorigin="anonymous"></script>
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Meta tag for SEO -->
-    <meta name="description" content="Descripción de tu página web para SEO" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Johann Schwarze-Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <script src="https://kit.fontawesome.com/012e8af5cd.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Johann Schwarze - Developer" />
-    <meta property="og:description" content="Desarollador FullStack" />
-    <meta
-      property="og:image"
-      content="https://page-johann.vercel.app/assets/fotoJohann2.png?random=345"
-    />
-    <meta property="og:url" content="https://page-johann.vercel.app/" />
-  </head>
-  <body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Meta tag for SEO -->
+  <meta name="description" content="Descripción de tu página web para SEO" />
 
-    <img src="./assets/arrowDown.png" alt="ArrowUp" class="icon arrowUp" />
-    <img src="./assets/arrowDown.png" alt="ArrowDown" class="icon arrowDown" />
-    <nav id="desktop-nav">
-      <div class="nav-title">Johann Schwarze</div>
-      <ul class="links-desktop">
-        <li><a class="nav-about" href="./#about">About</a></li>
-        <li><a class="nav-experience" href="./#experience">Experience</a></li>
-        <li><a class="nav-projects" href="#projects">Projects</a></li>
-        <li><a class="nav-contact" href="#contact">Contact</a></li>
-      </ul>
-      <div style="display: flex; justify-content: flex-end; align-items: center; ">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn" id="dropbtn">Language</button>
-          <div class="dropdown-content" id="dropdown-content">
-            <a href="#" data-lang="es">ES</a>
-            <a href="#" data-lang="en">EN</a>
-            <a href="#" data-lang="pt">PT</a>
-          </div>
-        </div>
-      </div>
-    </nav>
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Johann Schwarze - Developer" />
+  <meta property="og:description" content="Desarollador FullStack" />
+  <meta property="og:image" content="https://page-johann.vercel.app/assets/fotoJohann2.png?random=345" />
+  <meta property="og:url" content="https://page-johann.vercel.app/" />
+</head>
 
-    <section id="home" class="sec-1">
-      <div class="components1 animate">
-        <div class="section__pic-main">
-          <img src="./assets/fotoJohann2Reduc.jpg" alt="main picture" />
-        </div>
-        <div class="container">
-          <span class="text-1">Johann Schwarze</span>
-          <span class="text-2" id="subtitle">Full Stack Developer</span>
-          <div class="btn-container">
-            <button
-            id="button1"
-              class="btn-home btn-color-1"
-              onclick="window.open('./assets/resume-example.pdf')"
-            >
-              Download CV
-            </button>
-            <button
-            id="button2"
-              class="btn-home btn-color-2"
-              onclick="location.href='./#contact'"
-            >
-              Contact Info
-            </button>
-          </div>
-          <div id="socials-container">
-            <img
-              src="./assets/linkedinIcon3.png"
-              alt="My LinkedIn profile"
-              style="margin-top: -3px"
-              class="iconZoom"
-              target="_blank"
-              onclick="window.open('https://www.linkedin.com/in/johannsch/', '_blank')"
-            />
-            <img
-              src="./assets/githubWhite.png"
-              alt="My Github profile"
-              class="iconZoom"
-              onclick="window.open('https://github.com/jschacosta', '_blank')"
-            />
-          </div>
-          <div class="column">
-            <img
-              src="./assets/arrowDown.png"
-              alt="Arrow icon"
-              class="iconHeart"
-              style="margin-top: 10px"
-              onclick="location.href='./#about'"
-            />
-            
-          </div>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-       </div>
-      </div>
-    </section>
-    <section id="about" class="sec-2">
-      <div class="titles">
-        <p id="sec2-subtitle" class="section-p">Get To Know More</p>
-        <h1 id="sec2-title" class="section-title">About Me</h1>
-      </div>
-      <div class="components2 animate">
-        <div class="carrousel-container">
-          <div class="carrousel">
-            <img
-              src="./assets/FotoJohann3.png"
-              alt="aboutPicture"
-              class="slide"
-            />
-            <img src="./assets/pc.png" alt="aboutPicture" class="slide" />
-            <!-- Agrega más imágenes aquí -->
-          </div>
-        </div>
-        <div class="cardsAbout">
-          <div class="cardAbout" id="card1">
-            <img
-              src="./assets/experience2.png"
-              alt="cardIcon"
-              class="iconAbout"
-            />
-            <p id="sec2-button1-title" class="card-title">Experience</p>
-            <p id="sec2-button1-subtitle" class="card-subtitle">3+ years <br />Full Stack Development</p>
-          </div>
-          <div class="cardAbout" id="card2">
-            <img src="./assets/studies.png" alt="cardIcon" class="iconAbout" />
-            <p id="sec2-button2-title" class="card-title">Education</p>
-            <p id="sec2-button2-subtitle"  class="card-subtitle">B.Sc. in Civil Mechanical Engineering</p>
-          </div>
-          <div class="cardAbout" id="card3">
-            <img
-              src="./assets/dialogicon.png"
-              alt="cardIcon"
-              class="iconAbout"
-            />
-            <p id="sec2-button3-title"  class="card-title">Languages</p>
-            <p id="sec2-button3-subtitle"  class="card-subtitle">Spanish (Native), English, Portugues</p>
-          </div>
-        </div>
-      </div>
-      <div class="about-description animate"></div>
-    </section>
-    <section id="experience" class="sec-3">
-      <div class="titles">
-        <p id="sec3-subtitle" class="section-p">Explore My</p>
-        <h1 id="sec3-title"  class="section-title">Experience</h1>
-      </div>
-      <div class="components3 animate">
-        <div class="cardsFlip">
-          <div class="flipCard" onclick="flipCardOnClick('flipCard1')" id="flipCard1">
-            <div class="front">
-              <div class="title-front" id="sec3-cardTitle1">
-                Technical Skills
-              </div>
-              <div class="body-front" id="body-front-1">
-                <!-- Los elementos .item-front se generarán dinámicamente aquí -->
-              </div>
-            </div>
-            <div class="back" id="body-back-1">Back</div>
-          </div>
-          <div class="flipCard" onclick="flipCardOnClick('flipCard2')" id="flipCard2">
-            <div class="front">
-              <div class="title-front" id="sec3-cardTitle2">
-                Technical Skills
-              </div>
-              <div class="body-front" id="body-front-2">
-                <!-- Los elementos .item-front se generarán dinámicamente aquí -->
-              </div>
-            </div>
-            <div class="back" id="body-back-2">Back</div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="sec-4">
-      <div class="titles">
-        <p class="section-p">Browse My Recent</p>
-        <h1 class="section-title">Projects</h1>
-      </div>
-      <div class="empty1"></div>
-      <div class="components4 animate"> 
-          <div class="list-project">
-            <div class="card-list-project"  id="list-project-1">
-              <div class="title-list-project">Apuesta Laucha</div>
-              <div class="projects-chips">
-                <div class="chip chip-green">
-                  <img
-                  src="./assets/icons/vuejs-dark.svg"
-                  alt=" icon"
-                  class="icon"
-                  style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;"
-                />
-                  Vue 2
-                </div>
-                <div class="chip chip-yellow">
-                  <img
-                  src="./assets/icons/node-js.svg"
-                  alt=" icon"
-                  class="icon"
-                  style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;"
-                />
-                  Node js</div>
-                <div class="chip chip-grey">
-                  <img
-                  src="./assets/icons/database-dark.svg"
-                  alt=" icon"
-                  class="icon"
-                  style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;"
-                />
-                  Mongo</div>
-              </div>
-            </div>
-            <div class="card-list-project"  id="list-project-2">
-              <div class="title-list-project">SOS Travel</div>
-              <div class="projects-chips">
-                <div class="chip chip-black">
-                  <img
-                  src="./assets/icons/react-dark.svg"
-                  alt=" icon"
-                  class="icon"
-                  style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;"
-                />
-                  Next js</div>
-                  <div class="chip chip-yellow">
-                    <img
-                    src="./assets/icons/node-js.svg"
-                    alt=" icon"
-                    class="icon"
-                    style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;"
-                  />
-                    Node</div>
-                    <div class="chip chip-grey">
-                      <img
-                      src="./assets/icons/database-dark.svg"
-                      alt=" icon"
-                      class="icon"
-                      style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;"
-                    />
-                      Mongo</div>
-                <div class="chip">
-                  <img
-                  src="./assets/icons/aws.svg"
-                  alt=" icon"
-                  class="icon"
-                  style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;"
-                />
-                  AWS</div>
-              </div>
-            </div>
-            <div class="card-list-project"  id="list-project-3">
-              <div class="title-list-project">Unabase Grid</div>
-              <div class="projects-chips">
-                <div class="chip chip-green">
-                  <img
-                  src="./assets/icons/vuejs-dark.svg"
-                  alt=" icon"
-                  class="icon"
-                  style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;"
-                />
-                  Vue 3
-                </div>
-                <div class="chip chip-yellow">
-                  <img
-                  src="./assets/icons/node-js.svg"
-                  alt=" icon"
-                  class="icon"
-                  style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;"
-                />
-                  Node</div>
-                  <div class="chip chip-grey">
-                    <img
-                    src="./assets/icons/database-dark.svg"
-                    alt=" icon"
-                    class="icon"
-                    style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;"
-                  />
-                    Mongo</div>
-              <div class="chip">
-                <img
-                src="./assets/icons/aws.svg"
-                alt=" icon"
-                class="icon"
-                style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;"
-              />
-                AWS</div>
-              </div>
-            </div>
-            <div class="card-list-project"  id="list-project-4">
-              <div class="title-list-project">Loreto Acosta Page</div>
-              <div class="projects-chips">
-                <div class="chip chip-blue">
-                  <img
-                  src="./assets/icons/wordpress-dark.svg"
-                  alt=" icon"
-                  class="icon"
-                  style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;"
-                />
-                  Wordpress</div>
-              </div>
-            </div>
-            <img
-              src="./assets/icons/user-secret.svg"
-              alt="spyIcon"
-              style="margin-left: -300px"
-              class="iconZoom"
-              target="_blank"
-              onclick="window.open('https://www.linkedin.com/in/johannsch/', '_blank')"
-            />
-          </div>
-          <div class="content-project">
-            <!-- -------------------------- -->
-            <div class="element-project" id="project1">
-              <div class="content-project-img">
-                <img
-                src="./assets/apuestaLaucha.jpg"
-                alt="aboutPicture"
-              />
-              </div>
-              <div class="content-project-title">
-                <div class="project-title">Esta es la descripcion de apuesta laucha</div>
-                <div class="project-actions">
-                  <div class="btn-container">
-                    <button
-                    id="button1"
-                      class="btn-home btn-color-1"
-                      onclick="window.open('./assets/resume-example.pdf')"
-                    >
-                    <i class="fa fa-github fa-lg"></i>
-                      See Code
-                    </button>
-                    <button
-                    id="button2"
-                      class="btn-home btn-color-2"
-                      onclick="location.href='./#contact'"
-                    >
-                    <i class="fa fa-up-right-from-square"></i>
-                      See Demo
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="content-project-body">Body1</div>
-                    <!-- -------------------------- -->
-            <div class="element-project" id="project2">
-              <div class="content-project-img">  <img
-                src="./assets/sostvl.jpg"
-                alt="aboutPicture"
-              /></div>
-              <div class="content-project-title">
-                <div class="project-title">Description 2</div>
-                <div class="project-actions">Acciones</div>
-              </div>
-            </div>
-            <div class="content-project-body">Body2</div>
-                     <!-- -------------------------- -->
-            <div class="element-project" id="project3">
-              <div class="content-project-img">
-                <img
-                src="./assets/unabaseGrid2.jpg"
-                alt="aboutPicture"
-              />
-              </div>
-              <div class="content-project-title">
-                <div class="project-title">Description 3</div>
-                <div class="project-actions">Acciones</div>
-              </div>
-            </div>
-            <div class="content-project-body">Body3</div>
-                     <!-- -------------------------- -->
-            <div class="element-project" id="project4">
-              <div class="content-project-img">
-                <img
-                src="./assets/loretoAcosta.jpg"
-                alt="aboutPicture"
-              />
-              </div>
-              <div class="content-project-title">
-                <div class="project-title">Description 4</div>
-                <div class="project-actions">Acciones</div>
-              </div>
-            </div>
-            <div class="content-project-body">Body4</div>
-                     <!-- -------------------------- -->
-          </div>
-      </div>
-      <div class="empty2"></div>
-      </section>
-    <section id="contact" class="sec-5">
-      <div id="toast" class="toast"></div>
+<body>
 
-      <div class="titles">
-        <p class="section-p">Get in Touch</p>
-        <h1 class="section-title">Contact Me</h1>
+  <img src="./assets/arrowDown.png" alt="ArrowUp" class="icon arrowUp" />
+  <img src="./assets/arrowDown.png" alt="ArrowDown" class="icon arrowDown" />
+  <nav id="desktop-nav">
+    <div class="nav-title">Johann Schwarze</div>
+    <ul class="links-desktop">
+      <li><a class="nav-about" href="./#about">About</a></li>
+      <li><a class="nav-experience" href="./#experience">Experience</a></li>
+      <li><a class="nav-projects" href="#projects">Projects</a></li>
+      <li><a class="nav-contact" href="#contact">Contact</a></li>
+    </ul>
+    <div style="display: flex; justify-content: flex-end; align-items: center; ">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-     <form action="" class="components5 animate">
+      <div class="dropdown">
+        <button class="dropbtn" id="dropbtn">Language</button>
+        <div class="dropdown-content" id="dropdown-content">
+          <a href="#" data-lang="es">ES</a>
+          <a href="#" data-lang="en">EN</a>
+          <a href="#" data-lang="pt">PT</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home" class="sec-1">
+    <div class="components1 animate">
+      <div class="section__pic-main">
+        <img src="./assets/fotoJohann2Reduc.jpg" alt="main picture" />
+      </div>
+      <div class="container">
+        <span class="text-1">Johann Schwarze</span>
+        <span class="text-2" id="subtitle">Full Stack Developer</span>
+        <div class="btn-container">
+          <button id="button1" class="btn-home btn-color-1" onclick="window.open('./assets/resume-example.pdf')">
+            Download CV
+          </button>
+          <button id="button2" class="btn-home btn-color-2" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./assets/linkedinIcon3.png" alt="My LinkedIn profile" style="margin-top: -3px" class="iconZoom"
+            target="_blank" onclick="window.open('https://www.linkedin.com/in/johannsch/', '_blank')" />
+          <img src="./assets/githubWhite.png" alt="My Github profile" class="iconZoom"
+            onclick="window.open('https://github.com/jschacosta', '_blank')" />
+        </div>
+        <div class="column">
+          <img src="./assets/arrowDown.png" alt="Arrow icon" class="iconHeart" style="margin-top: 10px"
+            onclick="location.href='./#about'" />
+
+        </div>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="about" class="sec-2">
+    <div class="titles">
+      <p id="sec2-subtitle" class="section-p">Get To Know More</p>
+      <h1 id="sec2-title" class="section-title">About Me</h1>
+    </div>
+    <div class="components2 animate">
+      <div class="carrousel-container">
+        <div class="carrousel">
+          <img src="./assets/FotoJohann3.png" alt="aboutPicture" class="slide" />
+          <img src="./assets/pc.png" alt="aboutPicture" class="slide" />
+          <!-- Agrega más imágenes aquí -->
+        </div>
+      </div>
+      <div class="cardsAbout">
+        <div class="cardAbout" id="card1">
+          <img src="./assets/experience2.png" alt="cardIcon" class="iconAbout" />
+          <p id="sec2-button1-title" class="card-title">Experience</p>
+          <p id="sec2-button1-subtitle" class="card-subtitle">3+ years <br />Full Stack Development</p>
+        </div>
+        <div class="cardAbout" id="card2">
+          <img src="./assets/studies.png" alt="cardIcon" class="iconAbout" />
+          <p id="sec2-button2-title" class="card-title">Education</p>
+          <p id="sec2-button2-subtitle" class="card-subtitle">B.Sc. in Civil Mechanical Engineering</p>
+        </div>
+        <div class="cardAbout" id="card3">
+          <img src="./assets/dialogicon.png" alt="cardIcon" class="iconAbout" />
+          <p id="sec2-button3-title" class="card-title">Languages</p>
+          <p id="sec2-button3-subtitle" class="card-subtitle">Spanish (Native), English, Portugues</p>
+        </div>
+      </div>
+    </div>
+    <div class="about-description animate"></div>
+  </section>
+  <section id="experience" class="sec-3">
+    <div class="titles">
+      <p id="sec3-subtitle" class="section-p">Explore My</p>
+      <h1 id="sec3-title" class="section-title">Experience</h1>
+    </div>
+    <div class="components3 animate">
+      <div class="cardsFlip">
+        <div class="flipCard" onclick="flipCardOnClick('flipCard1')" id="flipCard1">
+          <div class="front">
+            <div class="title-front" id="sec3-cardTitle1">
+              Technical Skills
+            </div>
+            <div class="body-front" id="body-front-1">
+              <!-- Los elementos .item-front se generarán dinámicamente aquí -->
+            </div>
+          </div>
+          <div class="back" id="body-back-1">Back</div>
+        </div>
+        <div class="flipCard" onclick="flipCardOnClick('flipCard2')" id="flipCard2">
+          <div class="front">
+            <div class="title-front" id="sec3-cardTitle2">
+              Technical Skills
+            </div>
+            <div class="body-front" id="body-front-2">
+              <!-- Los elementos .item-front se generarán dinámicamente aquí -->
+            </div>
+          </div>
+          <div class="back" id="body-back-2">Back</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="projects" class="sec-4">
+    <div class="titles">
+      <p class="section-p">Browse My Recent</p>
+      <h1 class="section-title">Projects</h1>
+    </div>
+    <div class="empty1"></div>
+    <div class="components4 animate">
+      <div class="list-project">
+        <div class="card-list-project" id="list-project-1">
+          <div class="title-list-project">Apuesta Laucha</div>
+          <div class="projects-chips">
+            <div class="chip chip-green">
+              <img src="./assets/icons/vuejs-dark.svg" alt=" icon" class="icon"
+                style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;" />
+              Vue 2
+            </div>
+            <div class="chip chip-yellow">
+              <img src="./assets/icons/node-js.svg" alt=" icon" class="icon"
+                style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;" />
+              Node js
+            </div>
+            <div class="chip chip-grey">
+              <img src="./assets/icons/database-dark.svg" alt=" icon" class="icon"
+                style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;" />
+              Mongo
+            </div>
+          </div>
+        </div>
+        <div class="card-list-project" id="list-project-2">
+          <div class="title-list-project">SOS Travel</div>
+          <div class="projects-chips">
+            <div class="chip chip-black">
+              <img src="./assets/icons/react-dark.svg" alt=" icon" class="icon"
+                style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;" />
+              Next js
+            </div>
+            <div class="chip chip-yellow">
+              <img src="./assets/icons/node-js.svg" alt=" icon" class="icon"
+                style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;" />
+              Node
+            </div>
+            <div class="chip chip-grey">
+              <img src="./assets/icons/database-dark.svg" alt=" icon" class="icon"
+                style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;" />
+              Mongo
+            </div>
+            <div class="chip">
+              <img src="./assets/icons/aws.svg" alt=" icon" class="icon"
+                style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;" />
+              AWS
+            </div>
+          </div>
+        </div>
+        <div class="card-list-project" id="list-project-3">
+          <div class="title-list-project">Unabase Grid</div>
+          <div class="projects-chips">
+            <div class="chip chip-green">
+              <img src="./assets/icons/vuejs-dark.svg" alt=" icon" class="icon"
+                style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;" />
+              Vue 3
+            </div>
+            <div class="chip chip-yellow">
+              <img src="./assets/icons/node-js.svg" alt=" icon" class="icon"
+                style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;" />
+              Node
+            </div>
+            <div class="chip chip-grey">
+              <img src="./assets/icons/database-dark.svg" alt=" icon" class="icon"
+                style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;" />
+              Mongo
+            </div>
+            <div class="chip">
+              <img src="./assets/icons/aws.svg" alt=" icon" class="icon"
+                style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;" />
+              AWS
+            </div>
+          </div>
+        </div>
+        <div class="card-list-project" id="list-project-4">
+          <div class="title-list-project">Loreto Acosta Page</div>
+          <div class="projects-chips">
+            <div class="chip chip-blue">
+              <img src="./assets/icons/wordpress-dark.svg" alt=" icon" class="icon"
+                style="margin-top: 0px;margin-right: 5px; width: 14px; height: auto;" />
+              Wordpress
+            </div>
+          </div>
+        </div>
+        <img src="./assets/icons/user-secret.svg" alt="spyIcon" style="margin-left: -300px" class="iconZoom"
+          target="_blank" onclick="window.open('https://www.linkedin.com/in/johannsch/', '_blank')" />
+      </div>
+      <div class="content-project">
+        <!-- -------------------------- -->
+        <div class="element-project" id="project1">
+          <div class="content-project-img">
+            <img src="./assets/apuestaLaucha.jpg" alt="aboutPicture" />
+          </div>
+          <div class="content-project-title">
+            <div class="project-title">Esta es la descripcion de apuesta laucha</div>
+            <div class="project-actions">
+              <div class="btn-container">
+                <button id="button1" class="btn-home2 btn-color-1"
+                  onclick="window.open('https://github.com/jschacosta/lauchaFront', '_blank')">
+                  <i class="fa fa-github fa-lg"></i>
+                  Code 1
+                </button>
+                <button id="button1" class="btn-home2 btn-color-1"
+                  onclick="window.open('https://github.com/jschacosta/lauchaBack', '_blank')">
+                  <i class="fa fa-github fa-lg"></i>
+                  Code 2
+                </button>
+                <button id="button2" class="btn-home2 btn-color-2"
+                  onclick="window.open('https://lauchapp.up.railway.app', '_blank')">
+                  <i class="fa fa-up-right-from-square"></i>
+                  Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-project-body">Body1</div>
+        <!-- -------------------------- -->
+        <div class="element-project" id="project2">
+          <div class="content-project-img"> <img src="./assets/sostvl.jpg" alt="aboutPicture" /></div>
+          <div class="content-project-title">
+            <div class="project-title">Description 2</div>
+            <div class="project-actions">
+              <div class="btn-container">
+                <button id="button2" class="btn-home2 btn-color-2"
+                  onclick="window.open('https://test.sostvl.com/', '_blank')">
+                  <i class="fa fa-up-right-from-square"></i>
+                  Demo
+                </button>
+                <button id="button2" class="btn-home2 btn-color-2"
+                  onclick="window.open('https://sostvl.com/', '_blank')">
+                  <i class="fa fa-up-right-from-square"></i>
+                  Live
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="content-project-body">Body2</div>
+        <!-- -------------------------- -->
+        <div class="element-project" id="project3">
+          <div class="content-project-img">
+            <img src="./assets/unabaseGrid2.jpg" alt="aboutPicture" />
+          </div>
+          <div class="content-project-title">
+            <div class="project-title">Description 3</div>
+            <div class="project-actions">
+              <div class="btn-container">
+                <button id="button2" class="btn-home2 btn-color-2"
+                  onclick="window.open('https://vxpro.vercel.app/incomes', '_blank')">
+                  <i class="fa fa-up-right-from-square"></i>
+                  Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-project-body">Body3</div>
+        <!-- -------------------------- -->
+        <div class="element-project" id="project4">
+          <div class="content-project-img">
+            <img src="./assets/loretoAcosta.jpg" alt="aboutPicture" />
+          </div>
+          <div class="content-project-title">
+            <div class="project-title">Description 4</div>
+            <div class="project-actions">
+              <div class="btn-container">
+                <button id="button2" class="btn-home2 btn-color-2"
+                  onclick="window.open('https://loretoacosta.com/', '_blank')">
+                  <i class="fa fa-up-right-from-square"></i>
+                  Page
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="content-project-body">Body4</div>
+        <!-- -------------------------- -->
+      </div>
+    </div>
+    <div class="empty2"></div>
+  </section>
+  <section id="contact" class="sec-5">
+    <div id="toast" class="toast"></div>
+
+    <div class="titles">
+      <p class="section-p">Get in Touch</p>
+      <h1 class="section-title">Contact Me</h1>
+    </div>
+    <form action="" class="components5 animate">
       <div class="half">
         <div class="item">
           <label for="name">NAME</label>
-          <input type="text" id = "name">
+          <input type="text" id="name">
         </div>
         <div class="item">
           <label for="email">EMAIL</label>
@@ -427,16 +365,12 @@
       </div>
       <div class="full">
         <label for="message">MESSAGE</label>
-        <textarea name="" id = "message"></textarea>
+        <textarea name="" id="message"></textarea>
       </div>
       <div class="action">
         <div>
 
-          <button
-          id="buttonSubmit"
-          class="btn-home btn-color-1"
-          type="submit"
-          >
+          <button id="buttonSubmit" class="btn-home btn-color-1" type="submit">
             Submit
           </button>
           <!-- <button
@@ -448,31 +382,31 @@
           </button> -->
         </div>
         <div class="icons">
-          <a   target="_blank"
-          onclick="window.open('https://www.linkedin.com/in/johannsch/', '_blank')" class = "fa fa-linkedin"></a>
-          <a target="_blank"
-          onclick="window.open('https://github.com/jschacosta', '_blank')" class = "fa fa-github"></a>
-          <a target="_blank"
-          onclick="window.open('https://www.instagram.com/j.schw.19/', '_blank')" class = "fa fa-instagram"></a>
+          <a target="_blank" onclick="window.open('https://www.linkedin.com/in/johannsch/', '_blank')"
+            class="fa fa-linkedin"></a>
+          <a target="_blank" onclick="window.open('https://github.com/jschacosta', '_blank')" class="fa fa-github"></a>
+          <a target="_blank" onclick="window.open('https://www.instagram.com/j.schw.19/', '_blank')"
+            class="fa fa-instagram"></a>
         </div>
       </div>
-     </form>
-    </section>
-    <footer id="footer">
-      <nav>
-        <ul>
-          <li><a href="./#desktop-nav">Home</a></li>
-          <li><a href="./#about">About</a></li>
-          <li><a href="./#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- <div id="toast" class="toast">Message sent succesfully</div> -->
-      <p class="text-end-final">
-        Copyright &#169; 2024 Johann Schwarze. All Rights Reserved.
-      </p>
-    </footer>
-    <script type="module" src="script.js"></script>
-  </body>
+    </form>
+  </section>
+  <footer id="footer">
+    <nav>
+      <ul>
+        <li><a href="./#desktop-nav">Home</a></li>
+        <li><a href="./#about">About</a></li>
+        <li><a href="./#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- <div id="toast" class="toast">Message sent succesfully</div> -->
+    <p class="text-end-final">
+      Copyright &#169; 2024 Johann Schwarze. All Rights Reserved.
+    </p>
+  </footer>
+  <script type="module" src="script.js"></script>
+</body>
+
 </html>

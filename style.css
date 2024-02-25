@@ -708,9 +708,9 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 70%;
+  width: 60%;
   height: 100%;
-  font-size: 18px;
+  font-size: 16px;
   margin: 25px;
   color: white;
 }
@@ -718,7 +718,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
