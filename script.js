@@ -13,8 +13,10 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 //bloquear girado de telefono
-if (window.screen.orientation) {
-  window.screen.orientation.lock("portrait");
+if (screen.orientation) {
+  screen.orientation.lock("portrait").catch(function (error) {
+    console.log("Orientation lock error: " + error);
+  });
 }
 // Agrega la función al objeto global window
 window.toggleMenu = toggleMenu;
