@@ -128,6 +128,14 @@ function keySpaceNavigation() {
   let currentSectionIndex = 0; // Contador para la sección actual
 
   document.addEventListener("keydown", function (event) {
+    // Check if the active element is an input or textarea
+    if (
+      document.activeElement.tagName === "INPUT" ||
+      document.activeElement.tagName === "TEXTAREA"
+    ) {
+      return;
+    }
+
     if (event.code == "Space") {
       // Si se presiona la tecla espacio
       event.preventDefault(); // Prevenir el comportamiento predeterminado de desplazamiento

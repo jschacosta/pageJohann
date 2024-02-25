@@ -19,32 +19,29 @@ export function submitForm(event) {
   console.log("la data", data);
 
   // Make the fetch request
-  fetch("your-endpoint-url", {
+  fetch("https://api.sostvl.com/support/johanEmail", {
+    // fetch("http://localhost:9000/support/johannEmail", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
     body: JSON.stringify(data),
   })
-    .then((response) => {
-      if (response.ok) {
-        return response.text().then((text) => {
-          return text ? JSON.parse(text) : {};
-        });
+    .then((response) => response.json())
+    .then((data) => {
+      if (data && data.msg) {
+        toast.textContent = "Message sent successfully"; // Set the toast message
+        toast.className = "toast show toast-success"; // Set the toast color
+        setTimeout(function () {
+          toast.className = toast.className.replace("show", "");
+        }, 3000);
+        console.log("Success:", data);
       } else {
-        throw new Error("Server response was not ok.");
+        throw new Error("No message in data");
       }
     })
-    .then((data) => {
-      toast.textContent = "Message sent successfully"; // Set the toast message
-      toast.className = "toast show toast-success"; // Set the toast color
-      setTimeout(function () {
-        toast.className = toast.className.replace("show", "");
-      }, 3000);
-      console.log("Success:", data);
-    })
     .catch((error) => {
-      toast.textContent = "Message not sent"; // Set the toast message
+      toast.textContent = "An error occurred, please try again later"; // Set the toast message
       toast.className = "toast show toast-error"; // Set the toast color
       setTimeout(function () {
         toast.className = toast.className.replace("show", "");
