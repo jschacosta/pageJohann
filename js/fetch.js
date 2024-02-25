@@ -19,8 +19,8 @@ export function submitForm(event) {
   console.log("la data", data);
 
   // Make the fetch request
-  fetch("https://api.sostvl.com/support/johanEmail", {
-    // fetch("http://localhost:9000/support/johannEmail", {
+  // fetch("https://api.sostvl.com/support/johannEmail", {
+  fetch("http://localhost:9000/support/johannEmail", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
