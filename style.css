@@ -735,3 +735,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
   align-items: center;
   color: white;
 }
+
+.message-phone{
+  display:none
+}

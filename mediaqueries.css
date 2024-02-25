@@ -131,4 +131,11 @@
     height: 200px;
     transform: translateY(10px);
   }
+  .message-phone{
+    display:flex;
+    color: white;
+    justify-content: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+  }
 }
