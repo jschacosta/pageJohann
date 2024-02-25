@@ -677,7 +677,7 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
   width: 100%; /* Utiliza todo el ancho del contenedor */
   position: relative; /* Añadido para posicionar absolutamente .content-project-body respecto a este elemento */
   /* margin: 10px; */ /* Comentado para eliminar el margen */
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 .content-project-img{
@@ -708,17 +708,18 @@ form .half .item input:focus, form .full textarea:focus, form .action input[type
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 60%;
+  width: 65%;
   height: 100%;
   font-size: 16px;
-  margin: 25px;
+  margin-left: 25px;
+  margin-top: 20px;
   color: white;
 }
 .project-actions{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 35%;
   height: 100%;
   display: flex;
   justify-content: center;
