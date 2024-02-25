@@ -48,7 +48,7 @@ function initSlides() {
 
   // Inicia el carrusel
   slides[currentIndex].classList.add("active");
-  setInterval(nextSlide, 6000); // Cambia la diapositiva cada 3 segundos
+  setInterval(nextSlide, 3000); // Cambia la diapositiva cada 3 segundos
 }
 
 function setTexts() {
